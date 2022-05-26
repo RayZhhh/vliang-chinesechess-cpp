@@ -31,13 +31,13 @@ public:
 
 
 void calculate_each_path(Chessboard board, ChessPath &path, int depth, TreeType type) {
-    auto start_time = chrono::system_clock::now();
+//    auto start_time = chrono::system_clock::now();
 
     auto tree = AlphaBeta(board);
     path.value = tree.eval_path_val(path, depth);
 
 //    cout << "[thread time: " << (float) (chrono::system_clock::now() - start_time).count() / 1000000 << "s] ";
-cout << ">";
+    cout << ">";
     cout.flush();
 }
 

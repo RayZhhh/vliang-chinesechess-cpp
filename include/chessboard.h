@@ -9,7 +9,7 @@
 #include <vector>
 #include <algorithm>
 #include "weights.h"
-
+#include "zobrist_code.h"
 
 using namespace std;
 
@@ -87,15 +87,6 @@ public:
         this->init_chessboard();
     }
 
-//    Chessboard(Chessboard &chessboard) {
-//        for (int i = 0; i < CHESSBOARD_ROWS; i++) {
-//            for (int j = 0; j < CHESSBOARD_COLS; ++j) {
-//                this->board[i][j] = chessboard.board[i][j];
-//            }
-//        }
-//        this->init_chessboard();
-//    }
-
     void copy(Chessboard &chessboard);
 
     void get_chess_path_of_id(int x, int y, paths_t &ret);
@@ -113,6 +104,8 @@ public:
     int get_on_board_val();
 
     void print_chessboard();
+
+    double get_hash();
 };
 
 

@@ -624,6 +624,17 @@ void Chessboard::copy(Chessboard &chessboard) {
 }
 
 
+double Chessboard::get_hash() {
+    double hash = 0;
+    for (int i = 0; i < CHESSBOARD_ROWS; i++) {
+        for (int j = 0; j < CHESSBOARD_COLS; j++) {
+            hash += get_hash_code_of_id(board[i][j], i, j);
+        }
+    }
+    return hash;
+}
+
+
 ostream &operator<<(ostream &out, const ChessPath &path) {
     out << "Path{ <" << path.from_x << ", " << path.from_y << "> to <" << path.to_x << ", " << path.to_y
         << "> eat " << path.eat << "} " << "value = " << path.value;
