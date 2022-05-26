@@ -640,3 +640,5 @@ ostream &operator<<(ostream &out, const ChessPath &path) {
         << "> eat " << path.eat << "} " << "value = " << path.value;
     return out;
 }
+
+
