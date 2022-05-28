@@ -8,13 +8,8 @@
 #include "chessboard.h"
 #include "../hashmap/HashMap.h"
 
-class TableMsg {
-public:
-    int upper_bound;
-    int lower_bound;
-    int up_depth;
-    int lo_depth;
-};
+class TableMsg;
+class TreeSearch;
 
 
 class TreeSearch {
@@ -42,13 +37,22 @@ public:
 
     virtual int eval_path_val(const ChessPath &path, int depth) { return 0; }
 
-    static CTSL::HashMap<double, TableMsg> tran_table_max;
+    static CTSL::HashMap<int, TableMsg*> tran_table_max;
 
-    static CTSL::HashMap<double, TableMsg> tran_table_min;
+    static CTSL::HashMap<int, TableMsg*> tran_table_min;
 
     void update_lo_bound(int lo_bound, int color_sign, int depth);
 
     void update_up_bound(int up_bound, int color_sign, int depth);
+};
+
+
+class TableMsg {
+public:
+    int upperBound = TreeSearch::BETA_INIT_VAL;
+    int lowerBound = TreeSearch::ALPHA_INIT_VAL;
+    int upDepth;
+    int loDepth;
 };
 
 

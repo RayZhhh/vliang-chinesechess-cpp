@@ -105,7 +105,9 @@ public:
 
     void print_chessboard();
 
-    double get_hash();
+    int get_hash();
+
+    int get_verify();
 };
 
 

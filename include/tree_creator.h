@@ -6,11 +6,13 @@
 #define VLIANG_CHINESE_CHESS_TREE_CREATOR_H
 
 #include "alpha_beta.h"
+#include "mtdf.h"
 #include <memory>
 
 enum TreeType {
     ALPHA_BETA,
-    ALPHA_BETA_WITH_MEMORY
+    ALPHA_BETA_WITH_MEMORY,
+    MTDF_
 };
 
 
@@ -24,6 +26,9 @@ public:
 
             case ALPHA_BETA_WITH_MEMORY:
                 return std::make_shared<AlphaBetaWithMemory>(board);
+
+            case MTDF_:
+                return std::make_shared<MTDF>(board);
 
             default:
                 return nullptr;
