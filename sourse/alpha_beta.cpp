@@ -120,7 +120,7 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
 
     // -------------------- 查询置换表 ---------------------------------------------------
     int ch_hash = chessboard.get_hash();
-    TableMsg tableMsg;
+    TableMsg *tableMsg;
     bool find_ch;
 
     if (colorSign == MAX_LAYER_SIGN) {
@@ -131,19 +131,19 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
 
     // 要求能查询到当前局面，且置换表中的深度要大于当前深度时才使用置换表
     if (find_ch) {
-        if (tableMsg.lo_depth >= depth) {
-            if (tableMsg.lower_bound >= beta) {
+        if (tableMsg->loDepth >= depth) {
+            if (tableMsg->lowerBound >= beta) {
                 chessboard.undo_move_chess(path);
-                return tableMsg.lower_bound;
+                return tableMsg->lowerBound;
             }
-            alpha = alpha > tableMsg.lower_bound ? alpha : tableMsg.lower_bound;
+            alpha = alpha > tableMsg->lowerBound ? alpha : tableMsg->lowerBound;
         }
-        if (tableMsg.up_depth >= depth) {
-            if (tableMsg.upper_bound <= alpha) {
+        if (tableMsg->upDepth >= depth) {
+            if (tableMsg->upperBound <= alpha) {
                 chessboard.undo_move_chess(path);
-                return tableMsg.upper_bound;
+                return tableMsg->upperBound;
             }
-            beta = beta < tableMsg.upper_bound ? beta: tableMsg.upper_bound;
+            beta = beta < tableMsg->upperBound ? beta : tableMsg->upperBound;
         }
     }
     // -------------------- 查询置换表 ---------------------------------------------------

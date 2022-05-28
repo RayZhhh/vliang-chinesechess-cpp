@@ -4,15 +4,15 @@
 
 #include "../include/tree_search.h"
 
-CTSL::HashMap<double, TableMsg> TreeSearch::tran_table_max;
+CTSL::HashMap<int, TableMsg*> TreeSearch::tran_table_max;
 
-CTSL::HashMap<double, TableMsg> TreeSearch::tran_table_min;
+CTSL::HashMap<int, TableMsg*> TreeSearch::tran_table_min;
 
 
 void TreeSearch::update_lo_bound(int lo_bound, int color_sign, int depth) {
-    double ch_hash = this->chessboard.get_hash();
+    int ch_hash = this->chessboard.get_hash();
 
-    TableMsg msg;
+    TableMsg *msg;
     bool find_ch;
 
     if (color_sign == MAX_LAYER_SIGN) {
@@ -23,16 +23,16 @@ void TreeSearch::update_lo_bound(int lo_bound, int color_sign, int depth) {
 
     // 如果能找到当前盘面
     if (find_ch) {
-        if (depth > msg.lo_depth) {
-            msg.lower_bound = lo_bound;
-            msg.lo_depth = depth;
-        } else if (depth == msg.lo_depth) {
-            msg.lower_bound = msg.lower_bound > lo_bound ? msg.lower_bound : lo_bound;
+        if (depth > msg->loDepth) {
+            msg->lowerBound = lo_bound;
+            msg->loDepth = depth;
+        } else if (depth == msg->loDepth) {
+            msg->lowerBound = msg->lowerBound > lo_bound ? msg->lowerBound : lo_bound;
         }
     } else {
-        TableMsg tmp;
-        tmp.lower_bound = lo_bound;
-        tmp.lo_depth = depth;
+        auto tmp = new TableMsg;
+        tmp->lowerBound = lo_bound;
+        tmp->loDepth = depth;
         if (color_sign == MAX_LAYER_SIGN) {
             tran_table_max.insert(ch_hash, tmp);
         } else {
@@ -43,9 +43,8 @@ void TreeSearch::update_lo_bound(int lo_bound, int color_sign, int depth) {
 
 
 void TreeSearch::update_up_bound(int up_bound, int color_sign, int depth) {
-    double ch_hash = this->chessboard.get_hash();
-
-    TableMsg msg;
+    int ch_hash = this->chessboard.get_hash();
+    TableMsg *msg;
     bool find_ch;
 
     if (color_sign == MAX_LAYER_SIGN) {
@@ -56,16 +55,16 @@ void TreeSearch::update_up_bound(int up_bound, int color_sign, int depth) {
 
     // 如果能找到当前盘面
     if (find_ch) {
-        if (depth > msg.up_depth) {
-            msg.upper_bound = up_bound;
-            msg.up_depth = depth;
-        } else if (depth == msg.up_depth) {
-            msg.upper_bound = msg.upper_bound > up_bound ? msg.upper_bound : up_bound;
+        if (depth > msg->upDepth) {
+            msg->upperBound = up_bound;
+            msg->upDepth = depth;
+        } else if (depth == msg->upDepth) {
+            msg->upperBound = msg->upperBound > up_bound ? msg->upperBound : up_bound;
         }
     } else {
-        TableMsg tmp;
-        tmp.upper_bound = up_bound;
-        tmp.up_depth = depth;
+        auto tmp = new TableMsg;
+        tmp->upperBound = up_bound;
+        tmp->upDepth = depth;
         if (color_sign == MAX_LAYER_SIGN) {
             tran_table_max.insert(ch_hash, tmp);
         } else {

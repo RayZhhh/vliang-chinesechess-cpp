@@ -624,11 +624,26 @@ void Chessboard::copy(Chessboard &chessboard) {
 }
 
 
-double Chessboard::get_hash() {
-    double hash = 0;
+int Chessboard::get_hash() {
+    int hash = 0;
     for (int i = 0; i < CHESSBOARD_ROWS; i++) {
         for (int j = 0; j < CHESSBOARD_COLS; j++) {
-            hash += get_hash_code_of_id(board[i][j], i, j);
+            if (this->board[i][j] != 0) {
+                hash ^= get_hash_code_of_id(board[i][j], i, j);
+            }
+        }
+    }
+    return hash;
+}
+
+
+int Chessboard::get_verify() {
+    int hash = 0;
+    for (int i = 0; i < CHESSBOARD_ROWS; i++) {
+        for (int j = 0; j < CHESSBOARD_COLS; j++) {
+            if (this->board[i][j] != 0) {
+                hash ^= get_verify_code_of_id(board[i][j], i, j);
+            }
         }
     }
     return hash;
