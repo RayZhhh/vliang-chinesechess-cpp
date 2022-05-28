@@ -1,9 +1,15 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/vliang_chinese_chess.dir/sourse/alpha_beta.cpp.o"
-  "CMakeFiles/vliang_chinese_chess.dir/sourse/chessboard.cpp.o"
-  "CMakeFiles/vliang_chinese_chess.dir/sourse/main.cpp.o"
-  "CMakeFiles/vliang_chinese_chess.dir/sourse/tree_search.cpp.o"
-  "vliang_chinese_chess"
+  "CMakeFiles/vliang_chinese_chess.dir/sourse/alpha_beta.cpp.obj"
+  "CMakeFiles/vliang_chinese_chess.dir/sourse/alpha_beta.cpp.obj.d"
+  "CMakeFiles/vliang_chinese_chess.dir/sourse/chessboard.cpp.obj"
+  "CMakeFiles/vliang_chinese_chess.dir/sourse/chessboard.cpp.obj.d"
+  "CMakeFiles/vliang_chinese_chess.dir/sourse/main.cpp.obj"
+  "CMakeFiles/vliang_chinese_chess.dir/sourse/main.cpp.obj.d"
+  "CMakeFiles/vliang_chinese_chess.dir/sourse/tree_search.cpp.obj"
+  "CMakeFiles/vliang_chinese_chess.dir/sourse/tree_search.cpp.obj.d"
+  "libvliang_chinese_chess.dll.a"
+  "vliang_chinese_chess.exe"
+  "vliang_chinese_chess.exe.manifest"
   "vliang_chinese_chess.pdb"
 )
 

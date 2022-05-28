@@ -14,6 +14,7 @@ using namespace std;
 int main() {
     Chessboard board;
     board.move_chess(ChessPath(2, 1, 2, 4, 0));
+    board.print_chessboard();
 
     MultiThreadEvaluator evaluator(board, 8, TreeType::ALPHA_BETA_WITH_MEMORY);
     evaluator.get_best_path();

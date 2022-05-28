@@ -8,127 +8,129 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release"/>
+				<Option working_dir="C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release"/>
+				<Option working_dir="C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="vliang_chinese_chess">
-				<Option output="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/vliang_chinese_chess" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release"/>
+				<Option output="C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/vliang_chinese_chess.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 vliang_chinese_chess"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 vliang_chinese_chess"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="vliang_chinese_chess/fast">
-				<Option output="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/vliang_chinese_chess" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release"/>
+				<Option output="C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/vliang_chinese_chess.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 vliang_chinese_chess/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 vliang_chinese_chess/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Derek/Desktop/vliang-chinesechess-c++/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/hashmap/HashBucket.h">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/hashmap/HashBucket.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/hashmap/HashMap.h">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/hashmap/HashMap.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/hashmap/HashNode.h">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/hashmap/HashNode.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/alpha_beta.h">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/include/alpha_beta.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/chessboard.h">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/include/chessboard.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/mtdf.h">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/include/mtdf.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/multi_thread_evaluator.h">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/include/multi_thread_evaluator.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/transition_table.h">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/include/transition_table.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/tree_creator.h">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/include/tree_creator.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/tree_search.h">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/include/tree_search.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/weights.h">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/include/weights.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/zobrist_code.h">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/include/zobrist_code.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/sourse/alpha_beta.cpp">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/sourse/alpha_beta.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/sourse/chessboard.cpp">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/sourse/chessboard.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/sourse/main.cpp">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/sourse/main.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/sourse/tree_search.cpp">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/sourse/tree_search.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/CMakeLists.txt">
+		<Unit filename="C:/Users/Derek/Desktop/vliang-chinesechess-c++/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

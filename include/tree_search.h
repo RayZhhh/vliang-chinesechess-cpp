@@ -7,6 +7,7 @@
 
 #include "chessboard.h"
 #include "../hashmap/HashMap.h"
+#include "transition_table.h"
 
 class TableMsg;
 class TreeSearch;
@@ -25,7 +26,7 @@ public:
 
     Chessboard chessboard;
 
-    int depth;
+    int search_depth;
 
     TreeSearch(Chessboard &chessboard) {
         for (int i = 0; i < CHESSBOARD_ROWS; i++) {
@@ -37,9 +38,10 @@ public:
 
     virtual int eval_path_val(const ChessPath &path, int depth) { return 0; }
 
-    static CTSL::HashMap<int, TableMsg*> tran_table_max;
-
-    static CTSL::HashMap<int, TableMsg*> tran_table_min;
+    //    static CTSL::HashMap<double, TableMsg> tran_table_max;
+    TranTable<TableMsg> tran_table_max;
+    TranTable<TableMsg> tran_table_min;
+//    static CTSL::HashMap<double, TableMsg> tran_table_min;
 
     void update_lo_bound(int lo_bound, int color_sign, int depth);
 
@@ -51,8 +53,8 @@ class TableMsg {
 public:
     int upperBound = TreeSearch::BETA_INIT_VAL;
     int lowerBound = TreeSearch::ALPHA_INIT_VAL;
-    int upDepth;
-    int loDepth;
+    int upDepth = 0;
+    int loDepth = 0;
 };
 
 

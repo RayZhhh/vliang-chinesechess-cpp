@@ -8,12 +8,12 @@
 
 template<class TableMsg>
 class TranTable {
-    const static int HASH_SIZE = 1 << 20;
-    const static int VER_SIZE = 1 << 10;
+    const static int HASH_SIZE = 1 << 18;
+    const static int VER_SIZE = 1 << 3;
     const static int HASH_KEY = HASH_SIZE - 1;
     const static int VER_KEY = VER_SIZE - 1;
 
-    TableMsg *map[HASH_SIZE][VER_SIZE]{nullptr};
+    TableMsg *map[HASH_SIZE][VER_SIZE];
 
 public:
     TranTable() {

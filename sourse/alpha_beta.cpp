@@ -83,8 +83,8 @@ int AlphaBeta::alpha_beta_eval(ChessPath &path, int alpha, int beta, int depth, 
 
 
 int AlphaBeta::eval_path_val(const ChessPath &path, int depth) {
-    this->depth = depth;
-    return this->alpha_beta_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL, this->depth,
+    this->search_depth = depth;
+    return this->alpha_beta_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL, this->search_depth,
                                  MIN_LAYER_SIGN);
 }
 
@@ -120,25 +120,25 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
 
     // -------------------- 查询置换表 ---------------------------------------------------
     int ch_hash = chessboard.get_hash();
+    int ch_ver = chessboard.get_verify();
     TableMsg *tableMsg;
-    bool find_ch;
 
     if (colorSign == MAX_LAYER_SIGN) {
-        find_ch = tran_table_max.find(ch_hash, tableMsg);
+        tableMsg = tran_table_max.get_table(ch_hash, ch_ver);
     } else {
-        find_ch = tran_table_min.find(ch_hash, tableMsg);
+        tableMsg = tran_table_min.get_table(ch_hash, ch_ver);
     }
 
     // 要求能查询到当前局面，且置换表中的深度要大于当前深度时才使用置换表
-    if (find_ch) {
-        if (tableMsg->loDepth >= depth) {
+    if (tableMsg != nullptr) {
+        if (tableMsg->loDepth <= depth) {
             if (tableMsg->lowerBound >= beta) {
                 chessboard.undo_move_chess(path);
                 return tableMsg->lowerBound;
             }
             alpha = alpha > tableMsg->lowerBound ? alpha : tableMsg->lowerBound;
         }
-        if (tableMsg->upDepth >= depth) {
+        if (tableMsg->upDepth <= depth) {
             if (tableMsg->upperBound <= alpha) {
                 chessboard.undo_move_chess(path);
                 return tableMsg->upperBound;
@@ -222,7 +222,8 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
 
 
 int AlphaBetaWithMemory::eval_path_val(const ChessPath &path, int depth) {
-    this->depth = depth;
-    return this->alpha_beta_with_memory_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL, this->depth,
-                                 MIN_LAYER_SIGN);
+    this->search_depth = depth;
+    return this->alpha_beta_with_memory_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL,
+                                             this->search_depth,
+                                             MIN_LAYER_SIGN);
 }
