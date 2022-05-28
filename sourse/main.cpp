@@ -19,6 +19,5 @@ int main() {
     MultiThreadEvaluator evaluator(board, 8, TreeType::ALPHA_BETA_WITH_MEMORY);
     evaluator.get_best_path();
 
-
     return 0;
 }
