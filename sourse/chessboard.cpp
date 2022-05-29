@@ -650,6 +650,18 @@ int Chessboard::get_verify() {
 }
 
 
+bool Chessboard::is_checked(int color_sign) {
+    paths_t paths;
+    get_all_paths(-color_sign, paths);
+    for (auto &chessPath : paths) {
+        if (chessPath.eat == 5 || chessPath.eat == -5) {
+            return true;
+        }
+    }
+    return false;
+}
+
+
 ostream &operator<<(ostream &out, const ChessPath &path) {
     out << "Path{ <" << path.from_x << ", " << path.from_y << "> to <" << path.to_x << ", " << path.to_y
         << "> eat " << path.eat << "} " << "value = " << path.value;

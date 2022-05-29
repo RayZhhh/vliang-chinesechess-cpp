@@ -95,6 +95,8 @@ public:
 
     bool is_general_face2face();
 
+    bool is_checked(int color_sign);
+
     void init_chessboard();
 
     void move_chess(const ChessPath &path);

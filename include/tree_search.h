@@ -6,10 +6,10 @@
 #define VLIANG_CHINESE_CHESS_TREE_SEARCH_H
 
 #include "chessboard.h"
-#include "../hashmap/HashMap.h"
-#include "transition_table.h"
+#include "transition_table.hpp"
 
 class TableMsg;
+
 class TreeSearch;
 
 
@@ -24,11 +24,13 @@ public:
     const static int MIN_LAYER_SIGN = 1;
     const static int MAX_LAYER_SIGN = -1;
 
+    const static int QUIESCENCE_MAX_DEPTH = 8;
+
     Chessboard chessboard;
 
-    int search_depth;
+    int search_depth{};
 
-    TreeSearch(Chessboard &chessboard) {
+    explicit TreeSearch(Chessboard &chessboard) {
         for (int i = 0; i < CHESSBOARD_ROWS; i++) {
             for (int j = 0; j < CHESSBOARD_COLS; ++j) {
                 this->chessboard.board[i][j] = chessboard.board[i][j];
@@ -38,23 +40,22 @@ public:
 
     virtual int eval_path_val(const ChessPath &path, int depth) { return 0; }
 
-    //    static CTSL::HashMap<double, TableMsg> tran_table_max;
     TranTable<TableMsg> tran_table_max;
     TranTable<TableMsg> tran_table_min;
-//    static CTSL::HashMap<double, TableMsg> tran_table_min;
 
     void update_lo_bound(int lo_bound, int color_sign, int depth);
 
     void update_up_bound(int up_bound, int color_sign, int depth);
+
 };
 
 
 class TableMsg {
 public:
-    int upperBound = TreeSearch::BETA_INIT_VAL;
-    int lowerBound = TreeSearch::ALPHA_INIT_VAL;
-    int upDepth = 0;
-    int loDepth = 0;
+    int up_bound = TreeSearch::BETA_INIT_VAL;
+    int lo_bound = TreeSearch::ALPHA_INIT_VAL;
+    int up_depth = 0;
+    int lo_depth = 0;
 };
 
 

@@ -131,19 +131,19 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
 
     // 要求能查询到当前局面，且置换表中的深度要大于当前深度时才使用置换表
     if (tableMsg != nullptr) {
-        if (tableMsg->loDepth <= depth) {
-            if (tableMsg->lowerBound >= beta) {
+        if (tableMsg->lo_depth <= depth) {
+            if (tableMsg->lo_bound >= beta) {
                 chessboard.undo_move_chess(path);
-                return tableMsg->lowerBound;
+                return tableMsg->lo_bound;
             }
-            alpha = alpha > tableMsg->lowerBound ? alpha : tableMsg->lowerBound;
+            alpha = alpha > tableMsg->lo_bound ? alpha : tableMsg->lo_bound;
         }
-        if (tableMsg->upDepth <= depth) {
-            if (tableMsg->upperBound <= alpha) {
+        if (tableMsg->up_depth <= depth) {
+            if (tableMsg->up_bound <= alpha) {
                 chessboard.undo_move_chess(path);
-                return tableMsg->upperBound;
+                return tableMsg->up_bound;
             }
-            beta = beta < tableMsg->upperBound ? beta : tableMsg->upperBound;
+            beta = beta < tableMsg->up_bound ? beta : tableMsg->up_bound;
         }
     }
     // -------------------- 查询置换表 ---------------------------------------------------

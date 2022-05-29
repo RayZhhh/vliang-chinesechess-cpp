@@ -7,12 +7,15 @@
 
 #include "alpha_beta.h"
 #include "mtdf.h"
+#include "quiescence.h"
 #include <memory>
 
 enum TreeType {
     ALPHA_BETA,
     ALPHA_BETA_WITH_MEMORY,
-    MTDF_
+    MTDF,
+    QUIE,
+    MTDF_QUIE
 };
 
 
@@ -21,14 +24,21 @@ public:
 
     static shared_ptr<TreeSearch> get_tree(Chessboard board, TreeType treeType) {
         switch (treeType) {
+
             case ALPHA_BETA:
                 return std::make_shared<AlphaBeta>(board);
 
             case ALPHA_BETA_WITH_MEMORY:
                 return std::make_shared<AlphaBetaWithMemory>(board);
 
-            case MTDF_:
-                return std::make_shared<MTDF>(board);
+            case MTDF:
+                return std::make_shared<MTDF_Searching>(board);
+
+            case QUIE:
+                return std::make_shared<Quiescence>(board);
+
+            case MTDF_QUIE:
+                return std::make_shared<MTDF_Quiescence_Searching>(board);
 
             default:
                 return nullptr;

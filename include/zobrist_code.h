@@ -41,13 +41,13 @@ const static int verify_code[14][90] = {
 };
 
 
-static int get_hash_code_of_id(int id, int x, int y) {
+inline int get_hash_code_of_id(int id, int x, int y) {
     int a = id < 0 ? id + 7 : id + 6;
     return hash_code[a][x * 9 + y];
 }
 
 
-static int get_verify_code_of_id(int id, int x, int y) {
+inline int get_verify_code_of_id(int id, int x, int y) {
     int a = id < 0 ? id + 7 : id + 6;
     return verify_code[a][x * 9 + y];
 }

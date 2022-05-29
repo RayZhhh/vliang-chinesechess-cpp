@@ -18,9 +18,9 @@ public:
 };
 
 
-class AlphaBetaWithMemory : public TreeSearch {
+class AlphaBetaWithMemory : public AlphaBeta {
 public:
-    AlphaBetaWithMemory(Chessboard &chessboard) : TreeSearch(chessboard) {
+    AlphaBetaWithMemory(Chessboard &chessboard) : AlphaBeta(chessboard) {
     }
 
     int eval_path_val(const ChessPath &path, int depth) override;
