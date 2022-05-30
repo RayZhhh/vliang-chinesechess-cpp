@@ -131,14 +131,14 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
 
     // 要求能查询到当前局面，且置换表中的深度要大于当前深度时才使用置换表
     if (tableMsg != nullptr) {
-        if (tableMsg->lo_depth <= depth) {
+        if (tableMsg->lo_depth >= depth) {
             if (tableMsg->lo_bound >= beta) {
                 chessboard.undo_move_chess(path);
                 return tableMsg->lo_bound;
             }
             alpha = alpha > tableMsg->lo_bound ? alpha : tableMsg->lo_bound;
         }
-        if (tableMsg->up_depth <= depth) {
+        if (tableMsg->up_depth >= depth) {
             if (tableMsg->up_bound <= alpha) {
                 chessboard.undo_move_chess(path);
                 return tableMsg->up_bound;
@@ -150,7 +150,6 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
 
     // max层
     if (colorSign == MAX_LAYER_SIGN) {
-        int maxEval = MIN_EVAL_VAL;
 
         // 对手搜索我方可能的路径
         paths_t possible_paths;
@@ -159,11 +158,13 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
             return p2.value < p1.value;
         });
 
+        int al = alpha;
+        int maxEval = MIN_EVAL_VAL;
         for (ChessPath &chess_path: possible_paths) {
-            int eval = alpha_beta_with_memory_eval(chess_path, alpha, beta, depth - 1, MIN_LAYER_SIGN);
+            int eval = alpha_beta_with_memory_eval(chess_path, al, beta, depth - 1, MIN_LAYER_SIGN);
             maxEval = maxEval > eval ? maxEval : eval;
-            alpha = alpha > eval ? alpha : eval;
-            if (beta <= alpha) {
+            al = al > eval ? al : eval;
+            if (beta <= al) {
                 break;
             }
         }
@@ -183,7 +184,6 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
         return maxEval;
 
     } else { // min层
-        int minEval = MAX_EVAL_VAL;
 
         // 搜索对手的可能路径
         paths_t possible_paths;
@@ -193,11 +193,13 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
             return p2.value > p1.value;
         });
 
+        int be = beta;
+        int minEval = MAX_EVAL_VAL;
         for (ChessPath &chessPath: possible_paths) {
-            int eval = alpha_beta_with_memory_eval(chessPath, alpha, beta, depth - 1, MAX_LAYER_SIGN);
+            int eval = alpha_beta_with_memory_eval(chessPath, alpha, be, depth - 1, MAX_LAYER_SIGN);
             minEval = minEval < eval ? minEval : eval;
-            beta = beta < eval ? beta : eval;
-            if (beta <= alpha) {
+            be = be < eval ? be : eval;
+            if (be <= alpha) {
                 break;
             }
         }

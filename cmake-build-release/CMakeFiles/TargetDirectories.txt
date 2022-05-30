@@ -1,3 +1,3 @@
-/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/rebuild_cache.dir
-/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/edit_cache.dir
-/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/edit_cache.dir
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir

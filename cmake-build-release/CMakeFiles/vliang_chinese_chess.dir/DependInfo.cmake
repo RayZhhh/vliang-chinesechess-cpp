@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zhangrui/Desktop/vliang-chinesechess-cpp/main.cpp" "/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/main.cpp.o"
-  "/Users/zhangrui/Desktop/vliang-chinesechess-cpp/sourse/alpha_beta.cpp" "/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/sourse/alpha_beta.cpp.o"
-  "/Users/zhangrui/Desktop/vliang-chinesechess-cpp/sourse/chessboard.cpp" "/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/sourse/chessboard.cpp.o"
-  "/Users/zhangrui/Desktop/vliang-chinesechess-cpp/sourse/quiescence.cpp" "/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/sourse/quiescence.cpp.o"
-  "/Users/zhangrui/Desktop/vliang-chinesechess-cpp/sourse/tree_search.cpp" "/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/sourse/tree_search.cpp.o"
+  "/Users/zhangrui/Developer/vliang-chinesechess-cpp/main.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/main.cpp.o"
+  "/Users/zhangrui/Developer/vliang-chinesechess-cpp/sourse/alpha_beta.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/sourse/alpha_beta.cpp.o"
+  "/Users/zhangrui/Developer/vliang-chinesechess-cpp/sourse/chessboard.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/sourse/chessboard.cpp.o"
+  "/Users/zhangrui/Developer/vliang-chinesechess-cpp/sourse/quiescence.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/sourse/quiescence.cpp.o"
+  "/Users/zhangrui/Developer/vliang-chinesechess-cpp/sourse/tree_search.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/sourse/tree_search.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

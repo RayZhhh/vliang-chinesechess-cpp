@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release"/>
+				<Option working_dir="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release"/>
+				<Option working_dir="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release"/>
+				<Option working_dir="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="vliang_chinese_chess">
-				<Option output="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/vliang_chinese_chess" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release"/>
+				<Option output="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/vliang_chinese_chess" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 vliang_chinese_chess"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 vliang_chinese_chess"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="vliang_chinese_chess/fast">
-				<Option output="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/vliang_chinese_chess" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release"/>
+				<Option output="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/vliang_chinese_chess" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,59 +73,59 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 vliang_chinese_chess/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Desktop/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 vliang_chinese_chess/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/alpha_beta.h">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/include/alpha_beta.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/chessboard.h">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/include/chessboard.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/mtdf.h">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/include/mtdf.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/multi_thread_evaluator.h">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/include/multi_thread_evaluator.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/quiescence.h">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/include/quiescence.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/transition_table.hpp">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/include/transition_table.hpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/tree_creator.h">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/include/tree_creator.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/tree_search.h">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/include/tree_search.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/weights.h">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/include/weights.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/include/zobrist_code.h">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/include/zobrist_code.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/main.cpp">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/main.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/sourse/alpha_beta.cpp">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/sourse/alpha_beta.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/sourse/chessboard.cpp">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/sourse/chessboard.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/sourse/quiescence.cpp">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/sourse/quiescence.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/sourse/tree_search.cpp">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/sourse/tree_search.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Desktop/vliang-chinesechess-cpp/CMakeLists.txt">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
