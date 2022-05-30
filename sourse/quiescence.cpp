@@ -162,7 +162,7 @@ int Quiescence::quiescence(ChessPath &path, int alpha, int beta, int maxDepth, i
 }
 
 
-int Quiescence::quiescence_with_memory_eval(ChessPath &path, int alpha, int beta, int depth, int colorSign) {
+int Quiescence::alpha_beta_quiescence_with_memory_eval(ChessPath &path, int alpha, int beta, int depth, int colorSign) {
     // 判断生死
     if (path.eat == -5) {
         return MAX_EVAL_VAL;
@@ -239,7 +239,7 @@ int Quiescence::quiescence_with_memory_eval(ChessPath &path, int alpha, int beta
             return p2.value < p1.value;
         });
         for (ChessPath chessPath: possible_paths) {
-            int eval = quiescence_with_memory_eval(chessPath, al, beta, depth - 1, MIN_LAYER_SIGN);
+            int eval = alpha_beta_quiescence_with_memory_eval(chessPath, al, beta, depth - 1, MIN_LAYER_SIGN);
             maxEval = maxEval > eval ? maxEval : eval;
             al = al > maxEval ? al : maxEval;
             if (beta <= al) {
@@ -287,7 +287,7 @@ int Quiescence::quiescence_with_memory_eval(ChessPath &path, int alpha, int beta
         });
 
         for (ChessPath chessPath: possible_paths) {
-            int eval = quiescence_with_memory_eval(chessPath, alpha, be, depth - 1, MAX_LAYER_SIGN);
+            int eval = alpha_beta_quiescence_with_memory_eval(chessPath, alpha, be, depth - 1, MAX_LAYER_SIGN);
             minEval = minEval < eval ? minEval : eval;
             be = be < minEval ? be : minEval;
             if (be <= alpha) {
@@ -316,7 +316,8 @@ int Quiescence::quiescence_with_memory_eval(ChessPath &path, int alpha, int beta
 
 int Quiescence::eval_path_val(const ChessPath &path, int depth) {
     this->search_depth = depth;
-    return quiescence_with_memory_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL, depth, MIN_LAYER_SIGN);
+    return alpha_beta_quiescence_with_memory_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL, depth,
+                                                  MIN_LAYER_SIGN);
 }
 
 

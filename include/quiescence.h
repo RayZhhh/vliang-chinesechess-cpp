@@ -14,7 +14,7 @@ public:
 
     int quiescence(ChessPath &path, int alpha, int beta, int depth, int colorSign);
 
-    int quiescence_with_memory_eval(ChessPath &path, int alpha, int beta, int depth, int colorSign);
+    int alpha_beta_quiescence_with_memory_eval(ChessPath &path, int alpha, int beta, int depth, int colorSign);
 
     int eval_path_val(const ChessPath &path, int depth) override;
 };

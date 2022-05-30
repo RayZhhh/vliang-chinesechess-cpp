@@ -86,6 +86,9 @@
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/include/chessboard.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/include/iter_deepening.h">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/include/mtdf.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
