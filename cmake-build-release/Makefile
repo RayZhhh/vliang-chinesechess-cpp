@@ -129,6 +129,126 @@ vliang_chinese_chess/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/build
 .PHONY : vliang_chinese_chess/fast
 
+cpp/sourse/alpha_beta.o: cpp/sourse/alpha_beta.cpp.o
+.PHONY : cpp/sourse/alpha_beta.o
+
+# target to build an object file
+cpp/sourse/alpha_beta.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.o
+.PHONY : cpp/sourse/alpha_beta.cpp.o
+
+cpp/sourse/alpha_beta.i: cpp/sourse/alpha_beta.cpp.i
+.PHONY : cpp/sourse/alpha_beta.i
+
+# target to preprocess a source file
+cpp/sourse/alpha_beta.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.i
+.PHONY : cpp/sourse/alpha_beta.cpp.i
+
+cpp/sourse/alpha_beta.s: cpp/sourse/alpha_beta.cpp.s
+.PHONY : cpp/sourse/alpha_beta.s
+
+# target to generate assembly for a file
+cpp/sourse/alpha_beta.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.s
+.PHONY : cpp/sourse/alpha_beta.cpp.s
+
+cpp/sourse/chessboard.o: cpp/sourse/chessboard.cpp.o
+.PHONY : cpp/sourse/chessboard.o
+
+# target to build an object file
+cpp/sourse/chessboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.o
+.PHONY : cpp/sourse/chessboard.cpp.o
+
+cpp/sourse/chessboard.i: cpp/sourse/chessboard.cpp.i
+.PHONY : cpp/sourse/chessboard.i
+
+# target to preprocess a source file
+cpp/sourse/chessboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.i
+.PHONY : cpp/sourse/chessboard.cpp.i
+
+cpp/sourse/chessboard.s: cpp/sourse/chessboard.cpp.s
+.PHONY : cpp/sourse/chessboard.s
+
+# target to generate assembly for a file
+cpp/sourse/chessboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.s
+.PHONY : cpp/sourse/chessboard.cpp.s
+
+cpp/sourse/multi_thread_evaluator.o: cpp/sourse/multi_thread_evaluator.cpp.o
+.PHONY : cpp/sourse/multi_thread_evaluator.o
+
+# target to build an object file
+cpp/sourse/multi_thread_evaluator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.o
+.PHONY : cpp/sourse/multi_thread_evaluator.cpp.o
+
+cpp/sourse/multi_thread_evaluator.i: cpp/sourse/multi_thread_evaluator.cpp.i
+.PHONY : cpp/sourse/multi_thread_evaluator.i
+
+# target to preprocess a source file
+cpp/sourse/multi_thread_evaluator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.i
+.PHONY : cpp/sourse/multi_thread_evaluator.cpp.i
+
+cpp/sourse/multi_thread_evaluator.s: cpp/sourse/multi_thread_evaluator.cpp.s
+.PHONY : cpp/sourse/multi_thread_evaluator.s
+
+# target to generate assembly for a file
+cpp/sourse/multi_thread_evaluator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.s
+.PHONY : cpp/sourse/multi_thread_evaluator.cpp.s
+
+cpp/sourse/quiescence.o: cpp/sourse/quiescence.cpp.o
+.PHONY : cpp/sourse/quiescence.o
+
+# target to build an object file
+cpp/sourse/quiescence.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.o
+.PHONY : cpp/sourse/quiescence.cpp.o
+
+cpp/sourse/quiescence.i: cpp/sourse/quiescence.cpp.i
+.PHONY : cpp/sourse/quiescence.i
+
+# target to preprocess a source file
+cpp/sourse/quiescence.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.i
+.PHONY : cpp/sourse/quiescence.cpp.i
+
+cpp/sourse/quiescence.s: cpp/sourse/quiescence.cpp.s
+.PHONY : cpp/sourse/quiescence.s
+
+# target to generate assembly for a file
+cpp/sourse/quiescence.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.s
+.PHONY : cpp/sourse/quiescence.cpp.s
+
+cpp/sourse/tree_search.o: cpp/sourse/tree_search.cpp.o
+.PHONY : cpp/sourse/tree_search.o
+
+# target to build an object file
+cpp/sourse/tree_search.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.o
+.PHONY : cpp/sourse/tree_search.cpp.o
+
+cpp/sourse/tree_search.i: cpp/sourse/tree_search.cpp.i
+.PHONY : cpp/sourse/tree_search.i
+
+# target to preprocess a source file
+cpp/sourse/tree_search.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.i
+.PHONY : cpp/sourse/tree_search.cpp.i
+
+cpp/sourse/tree_search.s: cpp/sourse/tree_search.cpp.s
+.PHONY : cpp/sourse/tree_search.s
+
+# target to generate assembly for a file
+cpp/sourse/tree_search.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.s
+.PHONY : cpp/sourse/tree_search.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -153,102 +273,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-sourse/alpha_beta.o: sourse/alpha_beta.cpp.o
-.PHONY : sourse/alpha_beta.o
-
-# target to build an object file
-sourse/alpha_beta.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/sourse/alpha_beta.cpp.o
-.PHONY : sourse/alpha_beta.cpp.o
-
-sourse/alpha_beta.i: sourse/alpha_beta.cpp.i
-.PHONY : sourse/alpha_beta.i
-
-# target to preprocess a source file
-sourse/alpha_beta.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/sourse/alpha_beta.cpp.i
-.PHONY : sourse/alpha_beta.cpp.i
-
-sourse/alpha_beta.s: sourse/alpha_beta.cpp.s
-.PHONY : sourse/alpha_beta.s
-
-# target to generate assembly for a file
-sourse/alpha_beta.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/sourse/alpha_beta.cpp.s
-.PHONY : sourse/alpha_beta.cpp.s
-
-sourse/chessboard.o: sourse/chessboard.cpp.o
-.PHONY : sourse/chessboard.o
-
-# target to build an object file
-sourse/chessboard.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/sourse/chessboard.cpp.o
-.PHONY : sourse/chessboard.cpp.o
-
-sourse/chessboard.i: sourse/chessboard.cpp.i
-.PHONY : sourse/chessboard.i
-
-# target to preprocess a source file
-sourse/chessboard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/sourse/chessboard.cpp.i
-.PHONY : sourse/chessboard.cpp.i
-
-sourse/chessboard.s: sourse/chessboard.cpp.s
-.PHONY : sourse/chessboard.s
-
-# target to generate assembly for a file
-sourse/chessboard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/sourse/chessboard.cpp.s
-.PHONY : sourse/chessboard.cpp.s
-
-sourse/quiescence.o: sourse/quiescence.cpp.o
-.PHONY : sourse/quiescence.o
-
-# target to build an object file
-sourse/quiescence.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/sourse/quiescence.cpp.o
-.PHONY : sourse/quiescence.cpp.o
-
-sourse/quiescence.i: sourse/quiescence.cpp.i
-.PHONY : sourse/quiescence.i
-
-# target to preprocess a source file
-sourse/quiescence.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/sourse/quiescence.cpp.i
-.PHONY : sourse/quiescence.cpp.i
-
-sourse/quiescence.s: sourse/quiescence.cpp.s
-.PHONY : sourse/quiescence.s
-
-# target to generate assembly for a file
-sourse/quiescence.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/sourse/quiescence.cpp.s
-.PHONY : sourse/quiescence.cpp.s
-
-sourse/tree_search.o: sourse/tree_search.cpp.o
-.PHONY : sourse/tree_search.o
-
-# target to build an object file
-sourse/tree_search.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/sourse/tree_search.cpp.o
-.PHONY : sourse/tree_search.cpp.o
-
-sourse/tree_search.i: sourse/tree_search.cpp.i
-.PHONY : sourse/tree_search.i
-
-# target to preprocess a source file
-sourse/tree_search.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/sourse/tree_search.cpp.i
-.PHONY : sourse/tree_search.cpp.i
-
-sourse/tree_search.s: sourse/tree_search.cpp.s
-.PHONY : sourse/tree_search.s
-
-# target to generate assembly for a file
-sourse/tree_search.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/sourse/tree_search.cpp.s
-.PHONY : sourse/tree_search.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -258,21 +282,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... vliang_chinese_chess"
+	@echo "... cpp/sourse/alpha_beta.o"
+	@echo "... cpp/sourse/alpha_beta.i"
+	@echo "... cpp/sourse/alpha_beta.s"
+	@echo "... cpp/sourse/chessboard.o"
+	@echo "... cpp/sourse/chessboard.i"
+	@echo "... cpp/sourse/chessboard.s"
+	@echo "... cpp/sourse/multi_thread_evaluator.o"
+	@echo "... cpp/sourse/multi_thread_evaluator.i"
+	@echo "... cpp/sourse/multi_thread_evaluator.s"
+	@echo "... cpp/sourse/quiescence.o"
+	@echo "... cpp/sourse/quiescence.i"
+	@echo "... cpp/sourse/quiescence.s"
+	@echo "... cpp/sourse/tree_search.o"
+	@echo "... cpp/sourse/tree_search.i"
+	@echo "... cpp/sourse/tree_search.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... sourse/alpha_beta.o"
-	@echo "... sourse/alpha_beta.i"
-	@echo "... sourse/alpha_beta.s"
-	@echo "... sourse/chessboard.o"
-	@echo "... sourse/chessboard.i"
-	@echo "... sourse/chessboard.s"
-	@echo "... sourse/quiescence.o"
-	@echo "... sourse/quiescence.i"
-	@echo "... sourse/quiescence.s"
-	@echo "... sourse/tree_search.o"
-	@echo "... sourse/tree_search.i"
-	@echo "... sourse/tree_search.s"
 .PHONY : help
 
 

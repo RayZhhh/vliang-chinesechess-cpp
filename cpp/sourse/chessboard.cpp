@@ -653,12 +653,21 @@ int Chessboard::get_verify() {
 bool Chessboard::is_checked(int color_sign) {
     paths_t paths;
     get_all_paths(-color_sign, paths);
-    for (auto &chessPath : paths) {
+    for (auto &chessPath: paths) {
         if (chessPath.eat == 5 || chessPath.eat == -5) {
             return true;
         }
     }
     return false;
+}
+
+
+void Chessboard::copy(chessboard_t chessboard) {
+    for (int i = 0; i < CHESSBOARD_ROWS; i++) {
+        for (int j = 0; j < CHESSBOARD_COLS; ++j) {
+            this->board[i][j] = chessboard[i][j];
+        }
+    }
 }
 
 

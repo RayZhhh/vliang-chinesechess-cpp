@@ -52,6 +52,8 @@ public:
     int eat;
     int value;
 
+    ChessPath() {}
+
     ChessPath(int from_x, int from_y, int to_x, int to_y, int eat) :
             from_x(from_x), from_y(from_y), to_x(to_x), to_y(to_y), eat(eat) {
     }
@@ -88,6 +90,8 @@ public:
     }
 
     void copy(Chessboard &chessboard);
+
+    void copy(chessboard_t board);
 
     void get_chess_path_of_id(int x, int y, paths_t &ret);
 

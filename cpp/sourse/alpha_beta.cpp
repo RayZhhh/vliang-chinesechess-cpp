@@ -90,12 +90,14 @@ int AlphaBeta::eval_path_val(const ChessPath &path, int depth) {
 
 
 int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha, int beta, int depth, int colorSign) {
+
     // 判断生死
     if (path.eat == -5) {
         return MAX_EVAL_VAL;
     } else if (path.eat == 5) {
         return MIN_EVAL_VAL;
     }
+
     // 到达深度
     if (depth == 1) {
         chessboard.move_chess(path);
@@ -153,6 +155,7 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
 
         // 对手搜索我方可能的路径
         paths_t possible_paths;
+
         chessboard.get_all_paths(MIN_LAYER_SIGN, possible_paths);
         std::sort(possible_paths.begin(), possible_paths.end(), [](ChessPath &p1, ChessPath &p2) {
             return p2.value < p1.value;
@@ -171,14 +174,14 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
 
         // 将可能的情况保存到置换表
         if (maxEval <= alpha) {
-            update_up_bound(maxEval, MAX_LAYER_SIGN, depth);
+            update_up_bound(tableMsg, maxEval, MAX_LAYER_SIGN, depth, ch_hash, ch_ver);
         }
         if (alpha < maxEval && maxEval < beta) {
-            update_lo_bound(maxEval, MAX_LAYER_SIGN, depth);
-            update_up_bound(maxEval + 1, MAX_LAYER_SIGN, depth);
+            update_lo_bound(tableMsg, maxEval, MAX_LAYER_SIGN, depth, ch_hash, ch_ver);
+            update_up_bound(tableMsg, maxEval + 1, MAX_LAYER_SIGN, depth, ch_hash, ch_ver);
         }
         if (maxEval >= beta) {
-            update_lo_bound(maxEval, MAX_LAYER_SIGN, depth);
+            update_lo_bound(tableMsg, maxEval, MAX_LAYER_SIGN, depth, ch_hash, ch_ver);
         }
         chessboard.undo_move_chess(path);
         return maxEval;
@@ -187,8 +190,8 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
 
         // 搜索对手的可能路径
         paths_t possible_paths;
-        chessboard.get_all_paths(MAX_LAYER_SIGN, possible_paths);
 
+        chessboard.get_all_paths(MAX_LAYER_SIGN, possible_paths);
         std::sort(possible_paths.begin(), possible_paths.end(), [](ChessPath &p1, ChessPath &p2) {
             return p2.value > p1.value;
         });
@@ -206,14 +209,14 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
 
         // 将可能的情况保存到置换表
         if (minEval <= alpha) {
-            update_up_bound(minEval, MIN_LAYER_SIGN, depth);
+            update_up_bound(tableMsg, minEval, MIN_LAYER_SIGN, depth, ch_hash, ch_ver);
         }
         if (alpha < minEval && minEval < beta) {
-            update_lo_bound(minEval, MIN_LAYER_SIGN, depth);
-            update_up_bound(minEval + 1, MIN_LAYER_SIGN, depth);
+            update_lo_bound(tableMsg, minEval, MIN_LAYER_SIGN, depth, ch_hash, ch_ver);
+            update_up_bound(tableMsg, minEval + 1, MIN_LAYER_SIGN, depth, ch_hash, ch_ver);
         }
         if (minEval >= beta) {
-            update_lo_bound(minEval, MIN_LAYER_SIGN, depth);
+            update_lo_bound(tableMsg, minEval, MIN_LAYER_SIGN, depth, ch_hash, ch_ver);
         }
 
         // 恢复棋盘
@@ -226,6 +229,6 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
 int AlphaBetaWithMemory::eval_path_val(const ChessPath &path, int depth) {
     this->search_depth = depth;
     return this->alpha_beta_with_memory_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL,
-                                             this->search_depth,
-                                             MIN_LAYER_SIGN);
+                                             this->search_depth, MIN_LAYER_SIGN);
 }
+

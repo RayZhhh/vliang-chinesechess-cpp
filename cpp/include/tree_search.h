@@ -24,7 +24,7 @@ public:
     const static int MIN_LAYER_SIGN = 1;
     const static int MAX_LAYER_SIGN = -1;
 
-    const static int QUIESCENCE_MAX_DEPTH = 8;
+    const static int QUIESCENCE_MAX_DEPTH = 10;
 
     Chessboard chessboard;
 
@@ -43,15 +43,15 @@ public:
     TranTable<TableMsg> tran_table_max;
     TranTable<TableMsg> tran_table_min;
 
-    void update_lo_bound(int lo_bound, int color_sign, int depth);
+    void update_lo_bound(TableMsg *msg, int lo_bound, int color_sign, int depth, int hash, int ver);
 
-    void update_up_bound(int up_bound, int color_sign, int depth);
-
+    void update_up_bound(TableMsg *msg, int up_bound, int color_sign, int depth, int hash, int ver);
 };
 
 
 class TableMsg {
 public:
+    TableMsg() : up_bound(TreeSearch::BETA_INIT_VAL), lo_bound(TreeSearch::ALPHA_INIT_VAL), up_depth(0), lo_depth(0) {}
     int up_bound = TreeSearch::BETA_INIT_VAL;
     int lo_bound = TreeSearch::ALPHA_INIT_VAL;
     int up_depth = 0;

@@ -8,14 +8,17 @@
 #include "alpha_beta.h"
 #include "mtdf.h"
 #include "quiescence.h"
+#include "iter_deepening.h"
 #include <memory>
+
 
 enum TreeType {
     ALPHA_BETA,
     ALPHA_BETA_WITH_MEMORY,
     MTDF,
     QUIE,
-    MTDF_QUIE
+    MTDF_QUIE,
+    ITER_DEEP
 };
 
 
@@ -39,6 +42,9 @@ public:
 
             case MTDF_QUIE:
                 return std::make_shared<MTDF_Quiescence_Searching>(board);
+
+            case ITER_DEEP:
+                return std::make_shared<IterDeepening>(board);
 
             default:
                 return nullptr;

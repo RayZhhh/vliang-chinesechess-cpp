@@ -219,7 +219,6 @@ int Quiescence::alpha_beta_quiescence_with_memory_eval(ChessPath &path, int alph
 
         // 处理叶子节点
         if (depth == 1) {
-
             if (path.eat != 0) { // 如果正在发生吃子，进行静态搜索
                 chessboard.undo_move_chess(path);
                 // 这里要调用 MAX_LAYER_SIGN，因为静态搜索要帮助当前层完成搜索
@@ -249,14 +248,14 @@ int Quiescence::alpha_beta_quiescence_with_memory_eval(ChessPath &path, int alph
 
         // 将可能的情况保存到置换表
         if (maxEval <= alpha) {
-            update_up_bound(maxEval, MAX_LAYER_SIGN, depth);
+            update_up_bound(tableMsg, maxEval, MAX_LAYER_SIGN, depth, ch_hash, ch_ver);
         }
         if (alpha < maxEval && maxEval < beta) {
-            update_lo_bound(maxEval, MAX_LAYER_SIGN, depth);
-            update_up_bound(maxEval + 1, MAX_LAYER_SIGN, depth);
+            update_lo_bound(tableMsg, maxEval, MAX_LAYER_SIGN, depth, ch_hash, ch_ver);
+            update_up_bound(tableMsg, maxEval + 1, MAX_LAYER_SIGN, depth, ch_hash, ch_ver);
         }
         if (maxEval >= beta) {
-            update_lo_bound(maxEval, MAX_LAYER_SIGN, depth);
+            update_lo_bound(tableMsg, maxEval, MAX_LAYER_SIGN, depth, ch_hash, ch_ver);
         }
         chessboard.undo_move_chess(path);
         return maxEval;
@@ -297,14 +296,14 @@ int Quiescence::alpha_beta_quiescence_with_memory_eval(ChessPath &path, int alph
 
         // 将可能的情况保存到置换表
         if (minEval <= alpha) {
-            update_up_bound(minEval, MIN_LAYER_SIGN, depth);
+            update_up_bound(tableMsg, minEval, MIN_LAYER_SIGN, depth, ch_hash, ch_ver);
         }
         if (alpha < minEval && minEval < beta) {
-            update_lo_bound(minEval, MIN_LAYER_SIGN, depth);
-            update_up_bound(minEval + 1, MIN_LAYER_SIGN, depth);
+            update_lo_bound(tableMsg, minEval, MIN_LAYER_SIGN, depth, ch_hash, ch_ver);
+            update_up_bound(tableMsg, minEval + 1, MIN_LAYER_SIGN, depth, ch_hash, ch_ver);
         }
         if (minEval >= beta) {
-            update_lo_bound(minEval, MIN_LAYER_SIGN, depth);
+            update_lo_bound(tableMsg, minEval, MIN_LAYER_SIGN, depth, ch_hash, ch_ver);
         }
 
         // 恢复棋盘
@@ -319,5 +318,3 @@ int Quiescence::eval_path_val(const ChessPath &path, int depth) {
     return alpha_beta_quiescence_with_memory_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL, depth,
                                                   MIN_LAYER_SIGN);
 }
-
-
