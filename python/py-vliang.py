@@ -133,3 +133,4 @@ if __name__ == '__main__':
     board.print_chessboard()
     evaluator = MultiThreadEvaluator("bin/vliang_py_interface", board, TreeType.MTDF, 8, "res.txt")
     print(evaluator.get_best_path())
+
