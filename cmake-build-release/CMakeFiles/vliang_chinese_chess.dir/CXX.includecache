@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/alpha_beta.h
-tree_search.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_search.h
-
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/chessboard.h
 iostream
 -
@@ -22,46 +18,8 @@ weights.h
 zobrist_code.h
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/zobrist_code.h
 
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/iter_deepening.h
-mtdf.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/mtdf.h
-
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/mtdf.h
-tree_search.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_search.h
-alpha_beta.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/alpha_beta.h
-quiescence.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/quiescence.h
-
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/multi_thread_evaluator.h
-tree_search.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_search.h
-tree_creator.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_creator.h
-thread
--
-ctime
--
-
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/quiescence.h
-tree_search.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_search.h
-
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/transition_table.hpp
 unordered_map
--
-
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_creator.h
-alpha_beta.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/alpha_beta.h
-mtdf.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/mtdf.h
-quiescence.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/quiescence.h
-iter_deepening.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/iter_deepening.h
-memory
 -
 
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_search.h
@@ -74,11 +32,7 @@ transition_table.hpp
 
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/zobrist_code.h
 
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/main.cpp
-cpp/include/multi_thread_evaluator.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/multi_thread_evaluator.h
-stack
--
-fstream
--
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/tree_search.cpp
+../include/tree_search.h
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_search.h
 

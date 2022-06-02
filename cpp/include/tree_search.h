@@ -43,9 +43,9 @@ public:
     TranTable<TableMsg> tran_table_max;
     TranTable<TableMsg> tran_table_min;
 
-    void update_lo_bound(TableMsg *msg, int lo_bound, int color_sign, int depth, int hash, int ver);
+    void update_lo_bound(TableMsg *msg, int lo_bound, int color_sign, int depth, int hash, int ver, ChessPath &path);
 
-    void update_up_bound(TableMsg *msg, int up_bound, int color_sign, int depth, int hash, int ver);
+    void update_up_bound(TableMsg *msg, int up_bound, int color_sign, int depth, int hash, int ver, ChessPath &path);
 };
 
 
@@ -56,6 +56,7 @@ public:
     int lo_bound = TreeSearch::ALPHA_INIT_VAL;
     int up_depth = 0;
     int lo_depth = 0;
+    ChessPath best_path;
 };
 
 

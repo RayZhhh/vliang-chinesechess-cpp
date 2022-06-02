@@ -62,10 +62,25 @@ class MTDF_Quiescence_Searching : public Quiescence {
 public:
     explicit MTDF_Quiescence_Searching(Chessboard &board) : Quiescence(board) {}
 
+    void estimate_init_value(ChessPath &chess_path, int depth, int color_sign) {
+        this->mtdf_init_value = alpha_beta_quiescence_with_memory_eval(chess_path, ALPHA_INIT_VAL, BETA_INIT_VAL, depth - 2,
+                                                            color_sign);
+    }
+
+    int mtdf_init_value = 0;
+
+    bool estimate_MTDF_init_value = true;
+
     int mtdf_quiescence_search(ChessPath &chess_path, int beta, int depth, int color_sign) {
-        int val = beta;
+        if (this->estimate_MTDF_init_value) {
+            estimate_init_value(chess_path, depth, color_sign);
+        }
+
+        int val = this->mtdf_init_value;
+
         int upperBound = MAX_EVAL_VAL;
         int lowerBound = MIN_EVAL_VAL;
+
         while (lowerBound < upperBound) {
             if (val == lowerBound) {
                 beta = val + 1;
