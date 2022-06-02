@@ -205,7 +205,7 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
         if (tableMsg != nullptr) {
             possible_paths.push_back(tableMsg->best_path);
             chessboard.get_all_paths(MAX_LAYER_SIGN, possible_paths);
-            std::sort(possible_paths.begin(), possible_paths.end(), [](ChessPath &p1, ChessPath &p2) {
+            std::sort(possible_paths.begin() + 1, possible_paths.end(), [](ChessPath &p1, ChessPath &p2) {
                 return p2.value > p1.value;
             });
         } else {
