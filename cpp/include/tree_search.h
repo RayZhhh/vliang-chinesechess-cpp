@@ -24,7 +24,7 @@ public:
     const static int MIN_LAYER_SIGN = 1;
     const static int MAX_LAYER_SIGN = -1;
 
-    const static int QUIESCENCE_MAX_DEPTH = 10;
+    const static int QUIESCENCE_MAX_DEPTH = 8;
 
     Chessboard chessboard;
 
@@ -39,6 +39,8 @@ public:
     }
 
     virtual int eval_path_val(const ChessPath &path, int depth) { return 0; }
+
+    virtual int eval_path_val(const ChessPath &path, int depth, int color_sign) { return 0; }
 
     TranTable<TableMsg> tran_table_max;
     TranTable<TableMsg> tran_table_min;

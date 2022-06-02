@@ -89,6 +89,13 @@ int AlphaBeta::eval_path_val(const ChessPath &path, int depth) {
 }
 
 
+int AlphaBeta::eval_path_val(const ChessPath &path, int depth, int color_sign) {
+    this->search_depth = depth;
+    return this->alpha_beta_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL, this->search_depth,
+                                 color_sign);
+}
+
+
 int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha, int beta, int depth, int colorSign) {
 
     // 判断生死
@@ -254,5 +261,12 @@ int AlphaBetaWithMemory::eval_path_val(const ChessPath &path, int depth) {
     this->search_depth = depth;
     return this->alpha_beta_with_memory_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL,
                                              this->search_depth, MIN_LAYER_SIGN);
+}
+
+
+int AlphaBetaWithMemory::eval_path_val(const ChessPath &path, int depth, int color_sign) {
+    this->search_depth = depth;
+    return this->alpha_beta_with_memory_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL,
+                                             this->search_depth, color_sign);
 }
 

@@ -345,3 +345,10 @@ int Quiescence::eval_path_val(const ChessPath &path, int depth) {
     return alpha_beta_quiescence_with_memory_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL, depth,
                                                   MIN_LAYER_SIGN);
 }
+
+
+int Quiescence::eval_path_val(const ChessPath &path, int depth, int color_sign) {
+    this->search_depth = depth;
+    return alpha_beta_quiescence_with_memory_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL, depth,
+                                                  color_sign);
+}

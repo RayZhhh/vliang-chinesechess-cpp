@@ -129,6 +129,30 @@ vliang_chinese_chess/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/build
 .PHONY : vliang_chinese_chess/fast
 
+ai_self_match.o: ai_self_match.cpp.o
+.PHONY : ai_self_match.o
+
+# target to build an object file
+ai_self_match.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/ai_self_match.cpp.o
+.PHONY : ai_self_match.cpp.o
+
+ai_self_match.i: ai_self_match.cpp.i
+.PHONY : ai_self_match.i
+
+# target to preprocess a source file
+ai_self_match.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/ai_self_match.cpp.i
+.PHONY : ai_self_match.cpp.i
+
+ai_self_match.s: ai_self_match.cpp.s
+.PHONY : ai_self_match.s
+
+# target to generate assembly for a file
+ai_self_match.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/ai_self_match.cpp.s
+.PHONY : ai_self_match.cpp.s
+
 cpp/sourse/alpha_beta.o: cpp/sourse/alpha_beta.cpp.o
 .PHONY : cpp/sourse/alpha_beta.o
 
@@ -282,6 +306,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... vliang_chinese_chess"
+	@echo "... ai_self_match.o"
+	@echo "... ai_self_match.i"
+	@echo "... ai_self_match.s"
 	@echo "... cpp/sourse/alpha_beta.o"
 	@echo "... cpp/sourse/alpha_beta.i"
 	@echo "... cpp/sourse/alpha_beta.s"

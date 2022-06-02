@@ -17,6 +17,7 @@ public:
     TreeType tree_type;
     Chessboard board;
     int depth;
+    int color_sign;
 
     bool print_res =  true;
 
@@ -24,6 +25,14 @@ public:
         this->board = chessboard;
         this->depth = depth;
         this->tree_type = tree_type;
+        this->color_sign=TreeSearch::MIN_LAYER_SIGN;
+    }
+
+    MultiThreadEvaluator(Chessboard chessboard, int depth, TreeType tree_type, int color_sign) {
+        this->board = chessboard;
+        this->depth = depth;
+        this->tree_type = tree_type;
+        this->color_sign=color_sign;
     }
 
     ChessPath get_best_path();

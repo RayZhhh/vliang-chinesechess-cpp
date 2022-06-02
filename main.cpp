@@ -134,8 +134,55 @@ void py_parse(const char **argv) {
 }
 
 
+class AISelfMatch {
+public:
+    Chessboard cChessboard;
+
+    int step = 0;
+
+    void startSelfMatch() {
+
+        cChessboard.print_chessboard();
+
+//        cChessboard.move_chess(ChessPath(2, 1, 2, 4, 0));
+//        cChessboard.move_chess(ChessPath(3,2,4,2,0));
+        cChessboard.print_chessboard();
+
+        while (true) {
+            if (step++ == 60) {
+                cout << "和棋" << endl;
+                break;
+            }
+            //
+            ChessPath best_1 = MultiThreadEvaluator(cChessboard, 8, TreeType::MTDF,
+                                                    TreeSearch::MIN_LAYER_SIGN).get_best_path();
+            cChessboard.move_chess(best_1);
+            cout << "min 落子：" << best_1 << endl;
+
+            cChessboard.print_chessboard();
+            if (best_1.eat == -5) {
+                cout << "min 赢" << endl;
+                break;
+            }
+
+            //
+            ChessPath best_2 = MultiThreadEvaluator(cChessboard, 8, TreeType::MTDF_QUIE,
+                                                    TreeSearch::MAX_LAYER_SIGN).get_best_path();
+            cChessboard.move_chess(best_2);
+            cout << "max 落子：" << best_2 << endl;
+            cChessboard.print_chessboard();
+            if (best_2.eat == 5) {
+                cout << "max 赢" << endl;
+                break;
+            }
+        }
+    }
+};
+
+
 int main(int argc, const char **argv) {
-    ConsoleGame::runCChessGame();
+    AISelfMatch().startSelfMatch();
+//    ConsoleGame::runCChessGame();
 //    py_parse(argv);
     return 0;
 }

@@ -14,6 +14,9 @@ public:
 
     int eval_path_val(const ChessPath &path, int depth) override;
 
+    int eval_path_val(const ChessPath &path, int depth, int color_sign) override;
+
+
     int alpha_beta_eval(ChessPath &path, int alpha, int beta, int depth, int colorSign);
 };
 
@@ -24,6 +27,8 @@ public:
     }
 
     int eval_path_val(const ChessPath &path, int depth) override;
+
+    int eval_path_val(const ChessPath &path, int depth, int color_sign) override;
 
     int alpha_beta_with_memory_eval(ChessPath &path, int alpha, int beta, int depth, int colorSign);
 };

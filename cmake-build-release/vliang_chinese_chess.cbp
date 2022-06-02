@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/ai_self_match.cpp">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/alpha_beta.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>

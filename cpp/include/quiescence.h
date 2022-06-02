@@ -17,6 +17,8 @@ public:
     int alpha_beta_quiescence_with_memory_eval(ChessPath &path, int alpha, int beta, int depth, int colorSign);
 
     int eval_path_val(const ChessPath &path, int depth) override;
+
+    int eval_path_val(const ChessPath &path, int depth, int color_sign) override;
 };
 
 #endif //VLIANG_CHINESE_CHESS_QUIESCENCE_H
