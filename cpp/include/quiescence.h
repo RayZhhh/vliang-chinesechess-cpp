@@ -6,11 +6,12 @@
 #define VLIANG_CHINESE_CHESS_QUIESCENCE_H
 
 #include "tree_search.h"
+#include "alpha_beta.h"
 
 
-class Quiescence : public TreeSearch {
+class Quiescence : public AlphaBeta {
 public:
-    explicit Quiescence(Chessboard &board) : TreeSearch(board) {}
+    explicit Quiescence(Chessboard &board) : AlphaBeta(board) {}
 
     int quiescence(ChessPath &path, int alpha, int beta, int depth, int colorSign);
 

@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zhangrui/Developer/vliang-chinesechess-cpp/ai_self_match.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/ai_self_match.cpp.o"
   "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/alpha_beta.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.o"
   "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/chessboard.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.o"
   "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/multi_thread_evaluator.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.o"
   "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/quiescence.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.o"
   "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/tree_search.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.o"
   "/Users/zhangrui/Developer/vliang-chinesechess-cpp/main.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/main.cpp.o"
+  "/Users/zhangrui/Developer/vliang-chinesechess-cpp/py_interface.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

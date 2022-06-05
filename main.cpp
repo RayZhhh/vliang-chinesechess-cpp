@@ -70,7 +70,7 @@ public:
             cChessboard.print_chessboard();
 
             // ai
-            MultiThreadEvaluator evaluator(cChessboard, 8, TreeType::MTDF);
+            MultiThreadEvaluator evaluator(cChessboard, 8, TreeType::MTDF_QUIE);
             ChessPath best = evaluator.get_best_path();
             cChessboard.move_chess(best);
             stack.push(best);
@@ -78,60 +78,6 @@ public:
         }
     }
 };
-
-
-class ArgParser {
-public:
-
-    Chessboard board;
-    TreeType tree_type;
-    int depth{};
-
-    void parse_chessboard(const string &str) {
-        chessboard_t chessboard;
-
-        for (int i = 0; i < 90; i++) {
-            string id_str = string(str.begin() + i * 2, str.begin() + i * 2 + 2);
-            int id = stoi(id_str);
-            int chess_id = id - 20;
-            chessboard[i % 9][i - i % 9 * 9] = chess_id;
-        }
-
-        Chessboard ret;
-        ret.copy(chessboard);
-        this->board = ret;
-    }
-
-    void parse_tree_type(const string &tree_type_str) {
-        if ("ALPHA_BETA" == tree_type_str) tree_type = ALPHA_BETA;
-        if ("ALPHA_BETA_WITH_MEMORY" == tree_type_str) tree_type = ALPHA_BETA_WITH_MEMORY;
-        if ("MTDF" == tree_type_str) tree_type = MTDF;
-        if ("QUIE" == tree_type_str) tree_type = QUIE;
-    }
-
-    void parse_depth(const string &depth_str) {
-        this->depth = std::stoi(depth_str);
-    }
-};
-
-
-#include <fstream>
-
-void py_parse(const char **argv) {
-    ArgParser parser;
-    parser.parse_chessboard(argv[1]);
-    parser.parse_tree_type(argv[2]);
-    parser.parse_depth(argv[3]);
-
-    MultiThreadEvaluator evaluator(parser.board, parser.depth, parser.tree_type);
-    auto best_path = evaluator.get_best_path();
-    evaluator.print_res = false;
-
-    string path = argv[4];
-    ofstream out(path, ios::out);
-    out << best_path.from_x << "," << best_path.from_y << "," << best_path.to_x << "," << best_path.to_y << ","
-        << best_path.eat;
-}
 
 
 class AISelfMatch {
@@ -181,9 +127,8 @@ public:
 
 
 int main(int argc, const char **argv) {
-    AISelfMatch().startSelfMatch();
-//    ConsoleGame::runCChessGame();
-//    py_parse(argv);
+//    AISelfMatch().startSelfMatch();
+    ConsoleGame::runCChessGame();
     return 0;
 }
 

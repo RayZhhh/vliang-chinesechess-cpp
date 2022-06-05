@@ -47,6 +47,8 @@ ctime
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/quiescence.h
 tree_search.h
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_search.h
+alpha_beta.h
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/alpha_beta.h
 
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/transition_table.hpp
 unordered_map
@@ -74,11 +76,25 @@ transition_table.hpp
 
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/zobrist_code.h
 
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/multi_thread_evaluator.cpp
+../include/multi_thread_evaluator.h
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/multi_thread_evaluator.h
+
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/quiescence.cpp
+../include/quiescence.h
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/quiescence.h
+
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/main.cpp
 cpp/include/multi_thread_evaluator.h
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/multi_thread_evaluator.h
 stack
 -
+
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/py_interface.cpp
 fstream
 -
+iostream
+-
+cpp/include/multi_thread_evaluator.h
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/multi_thread_evaluator.h
 

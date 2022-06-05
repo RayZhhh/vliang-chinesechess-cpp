@@ -129,30 +129,6 @@ vliang_chinese_chess/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/build
 .PHONY : vliang_chinese_chess/fast
 
-ai_self_match.o: ai_self_match.cpp.o
-.PHONY : ai_self_match.o
-
-# target to build an object file
-ai_self_match.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/ai_self_match.cpp.o
-.PHONY : ai_self_match.cpp.o
-
-ai_self_match.i: ai_self_match.cpp.i
-.PHONY : ai_self_match.i
-
-# target to preprocess a source file
-ai_self_match.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/ai_self_match.cpp.i
-.PHONY : ai_self_match.cpp.i
-
-ai_self_match.s: ai_self_match.cpp.s
-.PHONY : ai_self_match.s
-
-# target to generate assembly for a file
-ai_self_match.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/ai_self_match.cpp.s
-.PHONY : ai_self_match.cpp.s
-
 cpp/sourse/alpha_beta.o: cpp/sourse/alpha_beta.cpp.o
 .PHONY : cpp/sourse/alpha_beta.o
 
@@ -297,6 +273,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+py_interface.o: py_interface.cpp.o
+.PHONY : py_interface.o
+
+# target to build an object file
+py_interface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o
+.PHONY : py_interface.cpp.o
+
+py_interface.i: py_interface.cpp.i
+.PHONY : py_interface.i
+
+# target to preprocess a source file
+py_interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.i
+.PHONY : py_interface.cpp.i
+
+py_interface.s: py_interface.cpp.s
+.PHONY : py_interface.s
+
+# target to generate assembly for a file
+py_interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.s
+.PHONY : py_interface.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -306,9 +306,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... vliang_chinese_chess"
-	@echo "... ai_self_match.o"
-	@echo "... ai_self_match.i"
-	@echo "... ai_self_match.s"
 	@echo "... cpp/sourse/alpha_beta.o"
 	@echo "... cpp/sourse/alpha_beta.i"
 	@echo "... cpp/sourse/alpha_beta.s"
@@ -327,6 +324,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... py_interface.o"
+	@echo "... py_interface.i"
+	@echo "... py_interface.s"
 .PHONY : help
 
 

@@ -68,16 +68,19 @@ public:
     explicit MTDF_Quiescence_Searching(Chessboard &board) : Quiescence(board) {}
 
     void estimate_init_value(ChessPath &chess_path, int depth, int color_sign) {
-        this->mtdf_init_value = alpha_beta_quiescence_with_memory_eval(chess_path, ALPHA_INIT_VAL, BETA_INIT_VAL,
-                                                                       depth - 2,
-                                                                       color_sign);
+//        this->mtdf_init_value = alpha_beta_quiescence_with_memory_eval(chess_path, ALPHA_INIT_VAL, BETA_INIT_VAL,
+//                                                                       depth - 2,
+//                                                                       color_sign);
+        this->mtdf_init_value = alpha_beta_eval(chess_path, ALPHA_INIT_VAL, BETA_INIT_VAL,
+                                                depth - 2,
+                                                color_sign);
     }
 
     int mtdf_init_value = 0;
 
     bool estimate_MTDF_init_value = true;
 
-    int mtdf_quiescence_search(ChessPath &chess_path, int beta, int depth, int color_sign) {
+    int mtdf_quiescence_eval(ChessPath &chess_path, int beta, int depth, int color_sign) {
         if (this->estimate_MTDF_init_value) {
             estimate_init_value(chess_path, depth, color_sign);
         }
@@ -106,12 +109,12 @@ public:
 
     int eval_path_val(const ChessPath &path, int depth) override {
         this->search_depth = depth;
-        return this->mtdf_quiescence_search(const_cast<ChessPath &>(path), 0, depth, MIN_LAYER_SIGN);
+        return this->mtdf_quiescence_eval(const_cast<ChessPath &>(path), 0, depth, MIN_LAYER_SIGN);
     }
 
     int eval_path_val(const ChessPath &path, int depth, int color_sign) override {
         this->search_depth = depth;
-        return this->mtdf_quiescence_search(const_cast<ChessPath &>(path), 0, depth, color_sign);
+        return this->mtdf_quiescence_eval(const_cast<ChessPath &>(path), 0, depth, color_sign);
     }
 };
 
