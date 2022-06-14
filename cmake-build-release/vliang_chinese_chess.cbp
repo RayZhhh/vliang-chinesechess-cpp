@@ -86,13 +86,13 @@
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/chessboard.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/evaluator.h">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/iter_deepening.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/mtdf.h">
-			<Option target="vliang_chinese_chess"/>
-		</Unit>
-		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/multi_thread_evaluator.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/quiescence.h">
@@ -119,7 +119,7 @@
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/chessboard.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/multi_thread_evaluator.cpp">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/evaluator.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/quiescence.cpp">

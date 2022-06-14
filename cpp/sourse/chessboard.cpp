@@ -427,41 +427,75 @@ void Chessboard::get_chess_path_of_id(int x, int y, paths_t &ret) {
 
 
 bool Chessboard::is_general_face2face() {
-    int rivalY = 0;
-    for (int i = 3; i <= 5; i++) {
-        bool findFlag = false;
-        for (int j = 0; j <= 2; j++) {
-            if (board[i][j] == -5) {
-                rivalY = j;
-                findFlag = true;
-            }
-            if (findFlag) {
-                break;
-            }
-        }
+    int sx, sy, rx, ry;
+    if (board[0][3] == -5) {
+        rx = 0;
+        ry = 3;
+    } else if (board[0][4] == -5) {
+        rx = 0;
+        ry = 4;
+    } else if (board[0][5] == -5) {
+        rx = 0;
+        ry = 5;
+    } else if (board[1][3] == -5) {
+        rx = 1;
+        ry = 3;
+    } else if (board[1][4] == -5) {
+        rx = 1;
+        ry = 4;
+    } else if (board[1][5] == -5) {
+        rx = 1;
+        ry = 5;
+    } else if (board[2][3] == -5) {
+        rx = 2;
+        ry = 3;
+    } else if (board[2][4] == -5) {
+        rx = 2;
+        ry = 4;
+    } else {
+        rx = 2;
+        ry = 5;
     }
-    bool isFind = false;
-    for (int i = 7; i <= 9; i++) {
-        if (board[i][rivalY] == 5) {
-            isFind = true;
-            break;
-        }
+
+    if (board[7][3] == 5) {
+        sx = 7;
+        sy = 3;
+    } else if (board[7][4] == 5) {
+        sx = 7;
+        sy = 4;
+    } else if (board[7][5] == 5) {
+        sx = 7;
+        sy = 5;
+    } else if (board[8][3] == 5) {
+        sx = 8;
+        sy = 3;
+    } else if (board[8][4] == 5) {
+        sx = 8;
+        sy = 4;
+    } else if (board[8][5] == 5) {
+        sx = 8;
+        sy = 5;
+    } else if (board[9][3] == 5) {
+        sx = 9;
+        sy = 3;
+    } else if (board[9][4] == 5) {
+        sx = 9;
+        sy = 4;
+    } else {
+        sx = 9;
+        sy = 5;
     }
-    // r如果没有
-    if (!isFind) {
+
+    if (ry != sy) {
         return false;
     }
-    bool getRivalGeneral = false;
-    for (int i = 0; board[i][rivalY] != 5; i++) {
-        if (board[i][rivalY] == -5) {
-            getRivalGeneral = true;
-            continue;
-        }
-        if (getRivalGeneral && board[i][rivalY] != 0) {
-            return true;
+
+    for (int i = rx + 1; i < sx; i++) {
+        if (board[i][ry] != 0) {
+            return false;
         }
     }
-    return false;
+    return true;
 }
 
 

@@ -14,19 +14,19 @@ CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.o: \
  ../cpp/include/weights.h \
  ../cpp/include/zobrist_code.h \
  ../cpp/sourse/chessboard.cpp
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.o: \
+CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o: \
  ../cpp/include/alpha_beta.h \
  ../cpp/include/chessboard.h \
+ ../cpp/include/evaluator.h \
  ../cpp/include/iter_deepening.h \
  ../cpp/include/mtdf.h \
- ../cpp/include/multi_thread_evaluator.h \
  ../cpp/include/quiescence.h \
  ../cpp/include/transition_table.hpp \
  ../cpp/include/tree_creator.h \
  ../cpp/include/tree_search.h \
  ../cpp/include/weights.h \
  ../cpp/include/zobrist_code.h \
- ../cpp/sourse/multi_thread_evaluator.cpp
+ ../cpp/sourse/evaluator.cpp
 CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.o: \
  ../cpp/include/alpha_beta.h \
  ../cpp/include/chessboard.h \
@@ -46,9 +46,9 @@ CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.o: \
 CMakeFiles/vliang_chinese_chess.dir/main.cpp.o: \
  ../cpp/include/alpha_beta.h \
  ../cpp/include/chessboard.h \
+ ../cpp/include/evaluator.h \
  ../cpp/include/iter_deepening.h \
  ../cpp/include/mtdf.h \
- ../cpp/include/multi_thread_evaluator.h \
  ../cpp/include/quiescence.h \
  ../cpp/include/transition_table.hpp \
  ../cpp/include/tree_creator.h \
@@ -59,9 +59,9 @@ CMakeFiles/vliang_chinese_chess.dir/main.cpp.o: \
 CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o: \
  ../cpp/include/alpha_beta.h \
  ../cpp/include/chessboard.h \
+ ../cpp/include/evaluator.h \
  ../cpp/include/iter_deepening.h \
  ../cpp/include/mtdf.h \
- ../cpp/include/multi_thread_evaluator.h \
  ../cpp/include/quiescence.h \
  ../cpp/include/transition_table.hpp \
  ../cpp/include/tree_creator.h \

@@ -131,18 +131,18 @@ CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/quiescence.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.s
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.o: ../cpp/sourse/multi_thread_evaluator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/multi_thread_evaluator.cpp
+CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
+CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o: ../cpp/sourse/evaluator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/evaluator.cpp
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/multi_thread_evaluator.cpp > CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.i
+CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/evaluator.cpp > CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.i
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/multi_thread_evaluator.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.s
+CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/evaluator.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.s
 
 CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
 CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o: ../py_interface.cpp
@@ -164,7 +164,7 @@ vliang_chinese_chess_OBJECTS = \
 "CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.o" \
 "CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.o" \
 "CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.o" \
-"CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.o" \
+"CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o" \
 "CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o"
 
 # External object files for target vliang_chinese_chess
@@ -175,7 +175,7 @@ vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.
 vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.o
 vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.o
 vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.o
-vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.o
+vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o
 vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o
 vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/build.make
 vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/link.txt

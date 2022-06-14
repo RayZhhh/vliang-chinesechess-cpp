@@ -12,6 +12,7 @@ int Quiescence::quiescence(ChessPath &path, int alpha, int beta, int maxDepth, i
     if (path.eat == -5) {
         return MAX_EVAL_VAL;
     }
+
     // 到达搜索深度
     if (maxDepth == 1) {
         chessboard.move_chess(path);
@@ -19,8 +20,10 @@ int Quiescence::quiescence(ChessPath &path, int alpha, int beta, int maxDepth, i
         chessboard.undo_move_chess(path);
         return val;
     }
+
     // 下棋
     chessboard.move_chess(path);
+
     // 落子后先判断是否有对将情况
     if (chessboard.is_general_face2face()) {
         if (colorSign == MAX_LAYER_SIGN) {
@@ -31,6 +34,7 @@ int Quiescence::quiescence(ChessPath &path, int alpha, int beta, int maxDepth, i
             return MIN_EVAL_VAL;
         }
     }
+
     // max
     if (colorSign == MAX_LAYER_SIGN) {
         paths_t chessPaths;
@@ -61,14 +65,18 @@ int Quiescence::quiescence(ChessPath &path, int alpha, int beta, int maxDepth, i
 
             // 启发
             sort(eat_paths.begin(), eat_paths.end(), [this](ChessPath &l, ChessPath &r) {
+#ifndef MVV_LVA
                 return l.value > r.value;
-//                if (get_pos_val(l.to_x, l.to_y, l.eat) != get_pos_val(r.to_x, r.to_y, r.eat)) {
-//                    return get_pos_val(l.to_x, l.to_y, l.eat) < get_pos_val(r.to_x, r.to_y, r.eat);
-//                } else {
-//                    return get_pos_val(l.from_x, l.from_y, chessboard.board[l.from_x][l.from_y]) <
-//                           get_pos_val(r.from_x, r.from_y, chessboard.board[r.from_x][r.from_y]);
-//                }
+#else
+                if (get_pos_val(l.to_x, l.to_y, l.eat) != get_pos_val(r.to_x, r.to_y, r.eat)) {
+                    return get_pos_val(l.to_x, l.to_y, l.eat) < get_pos_val(r.to_x, r.to_y, r.eat);
+                } else {
+                    return get_pos_val(l.from_x, l.from_y, chessboard.board[l.from_x][l.from_y]) <
+                           get_pos_val(r.from_x, r.from_y, chessboard.board[r.from_x][r.from_y]);
+                }
+#endif
             });
+
 
             int maxEval = MIN_EVAL_VAL;
             for (ChessPath chessPath: eat_paths) {
@@ -129,14 +137,17 @@ int Quiescence::quiescence(ChessPath &path, int alpha, int beta, int maxDepth, i
             }
 
             // 启发
-            sort(eat_paths.begin(), eat_paths.end(), [this](ChessPath &l, ChessPath &r) {
+            sort(eat_paths.begin(), eat_paths.end(), [](ChessPath &l, ChessPath &r) {
+#ifndef MVV_LVA
                 return l.value < r.value;
-//                if (get_pos_val(l.to_x, l.to_y, l.eat) != get_pos_val(r.to_x, r.to_y, r.eat)) {
-//                    return get_pos_val(l.to_x, l.to_y, l.eat) > get_pos_val(r.to_x, r.to_y, r.eat);
-//                } else {
-//                    return get_pos_val(l.from_x, l.from_y, chessboard.board[l.from_x][l.from_y]) >
-//                           get_pos_val(r.from_x, r.from_y, chessboard.board[r.from_x][r.from_y]);
-//                }
+#else
+                if (get_pos_val(l.to_x, l.to_y, l.eat) != get_pos_val(r.to_x, r.to_y, r.eat)) {
+                    return get_pos_val(l.to_x, l.to_y, l.eat) > get_pos_val(r.to_x, r.to_y, r.eat);
+                } else {
+                    return get_pos_val(l.from_x, l.from_y, chessboard.board[l.from_x][l.from_y]) >
+                           get_pos_val(r.from_x, r.from_y, chessboard.board[r.from_x][r.from_y]);
+                }
+#endif
             });
 
             int minEval = MAX_EVAL_VAL;

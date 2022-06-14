@@ -2,7 +2,7 @@
 // Created by 张睿 on 2022/5/31.
 //
 
-#include "../include/multi_thread_evaluator.h"
+#include "../include/evaluator.h"
 
 #define PROCESS_BAR_CHAR '>'
 
@@ -61,4 +61,26 @@ ChessPath MultiThreadEvaluator::get_best_path() {
     }
 
     return paths[0];
+}
+
+
+ChessPath DeepeningMultiThreadEvaluator::get_best_path() {
+    int real_search_depth = this->depth;
+    ChessPath ret;
+
+    while (true) {
+
+        auto start_time = chrono::system_clock::now();
+        ret = MultiThreadEvaluator::get_best_path();
+        float eval_time = (float) (chrono::system_clock::now() - start_time).count() / 1000000;
+
+        if (eval_time > this->time_threshold_in_second) {
+            break;
+        } else {
+            this->depth += 2;
+        }
+    }
+
+    this->depth = real_search_depth;
+    return ret;
 }

@@ -177,29 +177,29 @@ cpp/sourse/chessboard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.s
 .PHONY : cpp/sourse/chessboard.cpp.s
 
-cpp/sourse/multi_thread_evaluator.o: cpp/sourse/multi_thread_evaluator.cpp.o
-.PHONY : cpp/sourse/multi_thread_evaluator.o
+cpp/sourse/evaluator.o: cpp/sourse/evaluator.cpp.o
+.PHONY : cpp/sourse/evaluator.o
 
 # target to build an object file
-cpp/sourse/multi_thread_evaluator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.o
-.PHONY : cpp/sourse/multi_thread_evaluator.cpp.o
+cpp/sourse/evaluator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o
+.PHONY : cpp/sourse/evaluator.cpp.o
 
-cpp/sourse/multi_thread_evaluator.i: cpp/sourse/multi_thread_evaluator.cpp.i
-.PHONY : cpp/sourse/multi_thread_evaluator.i
+cpp/sourse/evaluator.i: cpp/sourse/evaluator.cpp.i
+.PHONY : cpp/sourse/evaluator.i
 
 # target to preprocess a source file
-cpp/sourse/multi_thread_evaluator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.i
-.PHONY : cpp/sourse/multi_thread_evaluator.cpp.i
+cpp/sourse/evaluator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.i
+.PHONY : cpp/sourse/evaluator.cpp.i
 
-cpp/sourse/multi_thread_evaluator.s: cpp/sourse/multi_thread_evaluator.cpp.s
-.PHONY : cpp/sourse/multi_thread_evaluator.s
+cpp/sourse/evaluator.s: cpp/sourse/evaluator.cpp.s
+.PHONY : cpp/sourse/evaluator.s
 
 # target to generate assembly for a file
-cpp/sourse/multi_thread_evaluator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/multi_thread_evaluator.cpp.s
-.PHONY : cpp/sourse/multi_thread_evaluator.cpp.s
+cpp/sourse/evaluator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.s
+.PHONY : cpp/sourse/evaluator.cpp.s
 
 cpp/sourse/quiescence.o: cpp/sourse/quiescence.cpp.o
 .PHONY : cpp/sourse/quiescence.o
@@ -312,9 +312,9 @@ help:
 	@echo "... cpp/sourse/chessboard.o"
 	@echo "... cpp/sourse/chessboard.i"
 	@echo "... cpp/sourse/chessboard.s"
-	@echo "... cpp/sourse/multi_thread_evaluator.o"
-	@echo "... cpp/sourse/multi_thread_evaluator.i"
-	@echo "... cpp/sourse/multi_thread_evaluator.s"
+	@echo "... cpp/sourse/evaluator.o"
+	@echo "... cpp/sourse/evaluator.i"
+	@echo "... cpp/sourse/evaluator.s"
 	@echo "... cpp/sourse/quiescence.o"
 	@echo "... cpp/sourse/quiescence.i"
 	@echo "... cpp/sourse/quiescence.s"
