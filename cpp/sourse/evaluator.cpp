@@ -44,7 +44,7 @@ string tree_to_string(TreeType type) {
 
 
 ChessPath MultiThreadEvaluator::get_best_path() {
-    auto start_time = chrono::system_clock::now();
+    auto start_time = chrono::steady_clock::now();
 
     paths_t paths;
     this->board.get_all_paths(this->color_sign, paths);
@@ -78,13 +78,9 @@ ChessPath MultiThreadEvaluator::get_best_path() {
 
     cout << endl;
 
-//    for (auto &path: paths) {
-//        cout << path << endl;
-//    }
-
 //    string hline = "-------------------------------------------------------------------------------------";
     string hline = "=====================================================================================";
-    string top_line="===================================Evaluate Result===================================";
+    string top_line = "===================================Evaluate Result===================================";
     cout << top_line << endl;
     for (int i = 0; i < print_res_num && i < paths.size(); i += 2) {
         cout << "| ";
@@ -99,8 +95,10 @@ ChessPath MultiThreadEvaluator::get_best_path() {
         string best_msg = "Best Path: " + paths[0].to_string();
         printf("| %-82s|\n", best_msg.c_str());
         cout << hline << endl;
-        string time_msg = "Thread Time=" + std::to_string((float) (chrono::system_clock::now() - start_time).count() / 1000000) + "s";
-        string tree_msg = "Tree Type=" + tree_to_string(tree_type) + "  Base Search Depth=" + to_string(depth) + "  " + time_msg;
+        string time_msg = "Thread Time=" + std::to_string((float) (chrono::duration_cast<chrono::milliseconds>(
+                chrono::steady_clock::now() - start_time).count()) / 1000) + "s";
+        string tree_msg =
+                "Tree Type=" + tree_to_string(tree_type) + "  Base Search Depth=" + to_string(depth) + "  " + time_msg;
         printf("| %-82s|\n", tree_msg.c_str());
         cout << hline << endl << endl;
     }

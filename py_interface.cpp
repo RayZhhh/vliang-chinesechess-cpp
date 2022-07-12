@@ -5,7 +5,7 @@
 #include <iostream>
 #include "cpp/include/evaluator.h"
 
-#define COMPILE_PY_INTERFACE
+//#define COMPILE_PY_INTERFACE
 
 #ifdef COMPILE_PY_INTERFACE
 
