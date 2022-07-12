@@ -113,9 +113,10 @@ ChessPath DeepeningMultiThreadEvaluator::get_best_path() {
 
     while (true) {
 
-        auto start_time = chrono::system_clock::now();
+        auto start_time = chrono::steady_clock::now();
         ret = MultiThreadEvaluator::get_best_path();
-        float eval_time = (float) (chrono::system_clock::now() - start_time).count() / 1000000;
+        float eval_time = (float) (chrono::duration_cast<chrono::milliseconds>(
+                chrono::steady_clock::now() - start_time).count()) / 1000;
 
         if (eval_time > this->time_threshold_in_second) {
             break;
