@@ -22,7 +22,7 @@ CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o: \
  ../cpp/include/mtdf.h \
  ../cpp/include/quiescence.h \
  ../cpp/include/transition_table.hpp \
- ../cpp/include/tree_creator.h \
+ ../cpp/include/tree_creator.hpp \
  ../cpp/include/tree_search.h \
  ../cpp/include/weights.h \
  ../cpp/include/zobrist_code.h \
@@ -51,7 +51,7 @@ CMakeFiles/vliang_chinese_chess.dir/main.cpp.o: \
  ../cpp/include/mtdf.h \
  ../cpp/include/quiescence.h \
  ../cpp/include/transition_table.hpp \
- ../cpp/include/tree_creator.h \
+ ../cpp/include/tree_creator.hpp \
  ../cpp/include/tree_search.h \
  ../cpp/include/weights.h \
  ../cpp/include/zobrist_code.h \
@@ -64,7 +64,7 @@ CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o: \
  ../cpp/include/mtdf.h \
  ../cpp/include/quiescence.h \
  ../cpp/include/transition_table.hpp \
- ../cpp/include/tree_creator.h \
+ ../cpp/include/tree_creator.hpp \
  ../cpp/include/tree_search.h \
  ../cpp/include/weights.h \
  ../cpp/include/zobrist_code.h \

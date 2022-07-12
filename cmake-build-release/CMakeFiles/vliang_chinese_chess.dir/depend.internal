@@ -22,7 +22,7 @@ CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/mtdf.h
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/quiescence.h
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/transition_table.hpp
- /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_creator.h
+ /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_creator.hpp
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_search.h
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/weights.h
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/zobrist_code.h
@@ -51,7 +51,7 @@ CMakeFiles/vliang_chinese_chess.dir/main.cpp.o
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/mtdf.h
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/quiescence.h
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/transition_table.hpp
- /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_creator.h
+ /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_creator.hpp
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_search.h
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/weights.h
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/zobrist_code.h
@@ -64,7 +64,7 @@ CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/mtdf.h
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/quiescence.h
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/transition_table.hpp
- /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_creator.h
+ /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_creator.hpp
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_search.h
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/weights.h
  /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/zobrist_code.h

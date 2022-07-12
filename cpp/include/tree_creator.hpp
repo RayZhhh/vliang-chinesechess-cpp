@@ -2,8 +2,8 @@
 // Created by 张睿 on 2022/5/25.
 //
 
-#ifndef VLIANG_CHINESE_CHESS_TREE_CREATOR_H
-#define VLIANG_CHINESE_CHESS_TREE_CREATOR_H
+#ifndef VLIANG_CHINESE_CHESS_TREE_CREATOR_HPP
+#define VLIANG_CHINESE_CHESS_TREE_CREATOR_HPP
 
 #include "alpha_beta.h"
 #include "mtdf.h"
@@ -50,7 +50,6 @@ public:
                 return nullptr;
         }
     }
-
 };
 
-#endif //VLIANG_CHINESE_CHESS_TREE_CREATOR_H
+#endif //VLIANG_CHINESE_CHESS_TREE_CREATOR_HPP

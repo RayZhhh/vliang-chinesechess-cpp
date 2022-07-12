@@ -9,13 +9,12 @@
 
 class AlphaBeta : public TreeSearch {
 public:
-    AlphaBeta(Chessboard &chessboard) : TreeSearch(chessboard) {
+    explicit AlphaBeta(Chessboard &chessboard) : TreeSearch(chessboard) {
     }
 
     int eval_path_val(const ChessPath &path, int depth) override;
 
     int eval_path_val(const ChessPath &path, int depth, int color_sign) override;
-
 
     int alpha_beta_eval(ChessPath &path, int alpha, int beta, int depth, int colorSign);
 };
@@ -23,7 +22,7 @@ public:
 
 class AlphaBetaWithMemory : public TreeSearch {
 public:
-    AlphaBetaWithMemory(Chessboard &chessboard) : TreeSearch(chessboard) {
+    explicit AlphaBetaWithMemory(Chessboard &chessboard) : TreeSearch(chessboard) {
     }
 
     int eval_path_val(const ChessPath &path, int depth) override;

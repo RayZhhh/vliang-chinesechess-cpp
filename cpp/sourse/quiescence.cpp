@@ -64,7 +64,7 @@ int Quiescence::quiescence(ChessPath &path, int alpha, int beta, int maxDepth, i
             }
 
             // 启发
-            sort(eat_paths.begin(), eat_paths.end(), [this](ChessPath &l, ChessPath &r) {
+            sort(eat_paths.begin(), eat_paths.end(), [](ChessPath &l, ChessPath &r) {
 #ifndef MVV_LVA
                 return l.value > r.value;
 #else
@@ -76,7 +76,6 @@ int Quiescence::quiescence(ChessPath &path, int alpha, int beta, int maxDepth, i
                 }
 #endif
             });
-
 
             int maxEval = MIN_EVAL_VAL;
             for (ChessPath chessPath: eat_paths) {

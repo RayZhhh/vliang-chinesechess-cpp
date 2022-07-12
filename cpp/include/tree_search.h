@@ -53,11 +53,14 @@ public:
 
 class TableMsg {
 public:
-    TableMsg() : up_bound(TreeSearch::BETA_INIT_VAL), lo_bound(TreeSearch::ALPHA_INIT_VAL), up_depth(0), lo_depth(0) {}
+    TableMsg() : up_bound(TreeSearch::BETA_INIT_VAL), lo_bound(TreeSearch::ALPHA_INIT_VAL), up_depth(0), lo_depth(0) {
+    }
+
     int up_bound = TreeSearch::BETA_INIT_VAL;
     int lo_bound = TreeSearch::ALPHA_INIT_VAL;
     int up_depth = 0;
     int lo_depth = 0;
+
     ChessPath best_path;
 };
 

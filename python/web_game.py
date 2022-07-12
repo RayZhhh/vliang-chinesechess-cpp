@@ -12,7 +12,7 @@ class VliangServer(BaseHTTPRequestHandler):
     #     self.send_response(200)
     #     self.send_header('Content-type', 'text/html;charset=UTF-8')
     #     self.end_headers()
-    #     f = open('../web/index.html', 'r')
+    #     f = open('../html/index.html', 'r')
     #     output = f.read()
     #     print(output)
     #     output = bytes(output, 'UTF-8')
@@ -24,7 +24,7 @@ class VliangServer(BaseHTTPRequestHandler):
         post_data = self.rfile.read(content_length).decode('utf-8')
 
         json_dict = json.loads(post_data)
-        print(json_dict["chessboard"])
+        # print(json_dict["chessboard"])
         board_str = json_dict["chessboard"]
         board_arr = board_str.split(";")
 
@@ -39,13 +39,13 @@ class VliangServer(BaseHTTPRequestHandler):
         eval_board.print_chessboard()
         evaluator = DeepeningMultiThreadEvaluator(interface_path='./bin/vliang_py_interface',
                                                   chessboard=eval_board,
-                                                  tree_type=TreeType.MTDF,
+                                                  tree_type=TreeType.MTDF_QUIE,
                                                   depth=6,
                                                   color_sign=Chessboard.MIN_LAYER_SIGN,
                                                   res_path='./.res.txt')
         path = evaluator.get_best_path()
         resp_msg = str(path.from_x) + ";" + str(path.from_y) + ";" + str(path.to_x) + ";" + str(path.to_y)
-        print(resp_msg)
+        # print(resp_msg)
         self.send_response(200)
         self.send_header('Content-type', 'text/html;charset=UTF-8')
         self.send_header("Access-Control-Allow-Origin", "*")

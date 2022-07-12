@@ -8,6 +8,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <sstream>
 #include "weights.h"
 #include "zobrist_code.h"
 
@@ -42,7 +43,8 @@ public:
 
 
 class ChessPath {
-    friend ostream &operator<<(ostream &out , const ChessPath &a);
+    friend ostream &operator<<(ostream &out, const ChessPath &a);
+    friend ostringstream &operator<<(ostringstream &out, const ChessPath &a);
 
 public:
     int from_x;
@@ -51,6 +53,8 @@ public:
     int to_y;
     int eat;
     int value;
+
+    string to_string();
 
     ChessPath() {}
 
@@ -61,7 +65,6 @@ public:
     ChessPath(int from_x, int from_y, int to_x, int to_y) :
             from_x(from_x), from_y(from_y), to_x(to_x), to_y(to_y), eat(0) {
     }
-
 };
 
 
@@ -114,6 +117,8 @@ public:
     int get_hash();
 
     int get_verify();
+
+    bool operator==(const Chessboard &chessboard) const;
 };
 
 

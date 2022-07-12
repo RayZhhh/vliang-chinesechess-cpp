@@ -269,4 +269,3 @@ int AlphaBetaWithMemory::eval_path_val(const ChessPath &path, int depth, int col
     return this->alpha_beta_with_memory_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL,
                                              this->search_depth, color_sign);
 }
-

@@ -705,10 +705,31 @@ void Chessboard::copy(chessboard_t chessboard) {
 }
 
 
+bool Chessboard::operator==(const Chessboard &chessboard) const {
+    for (int i = 0; i < CHESSBOARD_ROWS; i++) {
+        for (int j = 0; j < CHESSBOARD_COLS; j++) {
+            if (this->board[i][j] != chessboard.board[i][j]) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+
 ostream &operator<<(ostream &out, const ChessPath &path) {
     out << "Path{ <" << path.from_x << ", " << path.from_y << "> to <" << path.to_x << ", " << path.to_y
         << "> eat " << path.eat << "} " << "value = " << path.value;
     return out;
+}
+
+
+string ChessPath::to_string() {
+    string ret;
+    ret.append("from <").append(std::to_string(from_x)).append(", ").append(std::to_string(from_y)).append(
+            "> to <").append(std::to_string(to_x)).append(", ").append(std::to_string(to_y)).append("> eat=").append(
+            std::to_string(eat)).append(" value=").append(std::to_string(value));
+    return ret;
 }
 
 

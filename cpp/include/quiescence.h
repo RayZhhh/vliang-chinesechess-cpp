@@ -11,7 +11,8 @@
 
 class Quiescence : public AlphaBeta {
 public:
-    explicit Quiescence(Chessboard &board) : AlphaBeta(board) {}
+    explicit Quiescence(Chessboard &board) : AlphaBeta(board) {
+    }
 
     int quiescence(ChessPath &path, int alpha, int beta, int depth, int colorSign);
 

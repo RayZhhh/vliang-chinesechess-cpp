@@ -101,7 +101,7 @@
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/transition_table.hpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_creator.h">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_creator.hpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/tree_search.h">

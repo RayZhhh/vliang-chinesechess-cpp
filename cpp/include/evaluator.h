@@ -6,9 +6,10 @@
 #define VLIANG_CHINESE_CHESS_EVALUATOR_H
 
 #include "tree_search.h"
-#include "tree_creator.h"
+#include "tree_creator.hpp"
 #include <thread>
 #include <ctime>
+#include <iomanip>
 
 
 class SingleThreadEvaluator {
@@ -49,6 +50,7 @@ public:
     int depth;
     int color_sign;
     bool print_res = true;
+    int print_res_num = 14;
 
     MultiThreadEvaluator(Chessboard chessboard, int depth, TreeType tree_type) {
         this->board = chessboard;

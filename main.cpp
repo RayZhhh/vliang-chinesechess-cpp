@@ -71,7 +71,7 @@
 //            cChessboard.print_chessboard();
 //
 //            // ai
-//            MultiThreadEvaluator evaluator(cChessboard, 8, TreeType::MTDF_QUIE);
+//            MultiThreadEvaluator evaluator(cChessboard, 8, TreeType::MTDF);
 //            ChessPath best = evaluator.get_best_path();
 //            cChessboard.move_chess(best);
 //            stack.push(best);
@@ -127,15 +127,59 @@
 //};
 //
 //
+//class GameRecorder {
+//
+//    class RecorderTable {
+//    public:
+//        int time = 1;
+//    };
+//
+//public:
+//
+//    unordered_map<int, unordered_map<int, RecorderTable *>> record_map;
+//
+//    /**
+//     * 记录当前的棋盘
+//     * @param board
+//     */
+//    void recode(Chessboard board) {
+//        RecorderTable *rt;
+//        if ((rt = record_map[board.get_hash()][board.get_verify()]) != nullptr) {
+//            rt->time++;
+//        } else {
+//            record_map[board.get_hash()][board.get_verify()] = new RecorderTable();
+//        }
+//    }
+//
+//    /**
+//     * 查询在当前 board 下，如果要走path那么出现的盘面次数
+//     * @param board 当前没有落子的棋盘
+//     * @param path  想查询的路径
+//     * @return
+//     */
+//    int find_same_times(Chessboard board, ChessPath path) {
+//        board.move_chess(path);
+//        RecorderTable *rt;
+//        if ((rt = record_map[board.get_hash()][board.get_verify()]) != nullptr) {
+//            return rt->time;
+//        } else {
+//            return 0;
+//        }
+//    }
+//
+//    ~GameRecorder() {
+//        for (auto &i : record_map) {
+//            for (auto &j : i.second) {
+//                delete j.second;
+//            }
+//        }
+//    }
+//};
+//
+//
 //int main(int argc, const char **argv) {
 ////    AISelfMatch().startSelfMatch();
-////    ConsoleGame::runCChessGame();
-//    auto ch = Chessboard();
-//    ch.board[3][4] = 0;
-//    ch.board[6][4] = 0;
-//    ch.print_chessboard();
-//    cout << ch.is_general_face2face();
-//    return 0;
+//    ConsoleGame::runCChessGame();
 //}
 //
 //
