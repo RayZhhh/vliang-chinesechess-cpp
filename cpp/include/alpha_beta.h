@@ -7,9 +7,9 @@
 
 #include "tree_search.h"
 
-class AlphaBeta : public TreeSearch {
+class AlphaBeta : public TreeSearchBase {
 public:
-    explicit AlphaBeta(Chessboard &chessboard) : TreeSearch(chessboard) {
+    explicit AlphaBeta(Chessboard &chessboard) : TreeSearchBase(chessboard) {
     }
 
     int eval_path_val(const ChessPath &path, int depth) override;
@@ -20,9 +20,9 @@ public:
 };
 
 
-class AlphaBetaWithMemory : public TreeSearch {
+class AlphaBetaWithMemory : public TreeSearchBase {
 public:
-    explicit AlphaBetaWithMemory(Chessboard &chessboard) : TreeSearch(chessboard) {
+    explicit AlphaBetaWithMemory(Chessboard &chessboard) : TreeSearchBase(chessboard) {
     }
 
     int eval_path_val(const ChessPath &path, int depth) override;

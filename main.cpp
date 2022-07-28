@@ -102,7 +102,7 @@ public:
             }
             //
             ChessPath best_1 = MultiThreadEvaluator(cChessboard, 8, TreeType::MTDF,
-                                                    TreeSearch::MIN_LAYER_SIGN).get_best_path();
+                                                    TreeSearchBase::MAX_LAYER_SIGN).get_best_path();
             cChessboard.move_chess(best_1);
             cout << "min 落子：" << best_1 << endl;
 
@@ -114,7 +114,7 @@ public:
 
             //
             ChessPath best_2 = MultiThreadEvaluator(cChessboard, 8, TreeType::MTDF_QUIE,
-                                                    TreeSearch::MAX_LAYER_SIGN).get_best_path();
+                                                    TreeSearchBase::MIN_LAYER_SIGN).get_best_path();
             cChessboard.move_chess(best_2);
             cout << "max 落子：" << best_2 << endl;
             cChessboard.print_chessboard();

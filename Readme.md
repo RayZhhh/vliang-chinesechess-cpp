@@ -7,11 +7,15 @@
 
 ------
 
+![](./pics/vliang-cpp.jpeg)
+
 ## 简介
 
 这个项目是我仓库中使用java实现的 [vlumino-chinese chess] 的c++复现，同时优化了代码的结构，优化了置换表和历史表。 经对比，相同局面新的项目评估速度更快（约3倍的性能）。
 和我仓库中java项目相同：采用多线程加速评估。开局和中盘棋力还不错。开局支持深度为6+8的静态搜索，或者深度为8的mtd(f)搜索。随着后面盘面的简化允许更高的深度。 评估的速度和CPU性能相关。以我的电脑 19 15.4 macbook
 pro 为例：CPU型号为 Core i9-9880h @2.3GHz，开局阶段使用深度为8的mtd(f)搜索时间约为3-5秒，这已经是非常不错的成绩了，我相信这得益于c++优良的性能和采用的各种剪枝算法。
+
+相比我的java的实现稍有改进，因此我在开局尝试深度为6+10的静态搜索，发现效果很不错。于是在这个版本中我不准备设计开局库了。
 
 ## 支持的算法
 
@@ -60,9 +64,9 @@ int main() {
     board.print_chessboard();
     
     // 创建评估器，有这两种方式，目前仅支持多线程评估器
-    // 如果需要评估 《棋子为正数一方》的最佳路径，传入 TreeSearch::MIN_LAYER_SIGN，反之用MAX
-    MultiThreadEvaluator evaluator(board, 8, TreeType::MTDF /*   , TreeSearch::MIN_LAYER_SIGN */); 
-    MultiThreadEvalautor evalator_1(board, 6, TreeType::MTDF_QUIE, TreeSearch::MIN_LAYER_SIGN   );
+    // 如果需要评估 《棋子为正数一方》的最佳路径，传入 TreeSearchBase::MAX_LAYER_SIGN，反之用MIN
+    MultiThreadEvaluator evaluator(board, 8, TreeType::MTDF /*   , TreeSearchBase::MAX_LAYER_SIGN */); 
+    MultiThreadEvalautor evalator_1(board, 6, TreeType::MTDF_QUIE, TreeSearchBase::MAX_LAYER_SIGN   );
     
     // 评估
     auto path = evaluator.get_best_path();

@@ -79,70 +79,70 @@ CMakeFiles/vliang_chinese_chess.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/main.cpp -o CMakeFiles/vliang_chinese_chess.dir/main.cpp.s
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.o: ../cpp/sourse/chessboard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/chessboard.cpp
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.o: ../cpp/source/chessboard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/chessboard.cpp
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/chessboard.cpp > CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.i
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/chessboard.cpp > CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.i
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/chessboard.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.s
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/chessboard.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.s
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.o: ../cpp/sourse/tree_search.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/tree_search.cpp
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.o: ../cpp/source/tree_search.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/tree_search.cpp
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/tree_search.cpp > CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.i
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/tree_search.cpp > CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.i
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/tree_search.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.s
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/tree_search.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.s
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.o: ../cpp/sourse/alpha_beta.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/alpha_beta.cpp
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.o: ../cpp/source/alpha_beta.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/alpha_beta.cpp
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/alpha_beta.cpp > CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.i
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/alpha_beta.cpp > CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.i
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/alpha_beta.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.s
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/alpha_beta.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.s
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.o: ../cpp/sourse/quiescence.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/quiescence.cpp
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.o: ../cpp/source/quiescence.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/quiescence.cpp
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/quiescence.cpp > CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.i
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/quiescence.cpp > CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.i
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/quiescence.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.s
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/quiescence.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.s
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o: ../cpp/sourse/evaluator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/evaluator.cpp
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.o: ../cpp/source/evaluator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/evaluator.cpp
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/evaluator.cpp > CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.i
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/evaluator.cpp > CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.i
 
-CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/evaluator.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.s
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/evaluator.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.s
 
 CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
 CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o: ../py_interface.cpp
@@ -157,29 +157,44 @@ CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/py_interface.cpp -o CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.s
 
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.o: CMakeFiles/vliang_chinese_chess.dir/flags.make
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.o: ../cpp/source/mtdf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/mtdf.cpp
+
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/mtdf.cpp > CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.i
+
+CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/mtdf.cpp -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.s
+
 # Object files for target vliang_chinese_chess
 vliang_chinese_chess_OBJECTS = \
 "CMakeFiles/vliang_chinese_chess.dir/main.cpp.o" \
-"CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.o" \
-"CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.o" \
-"CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.o" \
-"CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.o" \
-"CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o" \
-"CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o"
+"CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.o" \
+"CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.o" \
+"CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.o" \
+"CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.o" \
+"CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.o" \
+"CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o" \
+"CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.o"
 
 # External object files for target vliang_chinese_chess
 vliang_chinese_chess_EXTERNAL_OBJECTS =
 
 vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/main.cpp.o
-vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.o
-vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.o
-vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.o
-vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.o
-vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o
+vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.o
+vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.o
+vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.o
+vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.o
+vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.o
 vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o
+vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.o
 vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/build.make
 vliang_chinese_chess: CMakeFiles/vliang_chinese_chess.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable vliang_chinese_chess"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable vliang_chinese_chess"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vliang_chinese_chess.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

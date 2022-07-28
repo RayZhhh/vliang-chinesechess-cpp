@@ -47,7 +47,7 @@ ChessPath MultiThreadEvaluator::get_best_path() {
     auto start_time = chrono::steady_clock::now();
 
     paths_t paths;
-    this->board.get_all_paths(this->color_sign, paths);
+    this->board.get_all_paths(-this->color_sign, paths);
 
     if (print_res) {
         // print process bar
@@ -63,14 +63,14 @@ ChessPath MultiThreadEvaluator::get_best_path() {
     for (ChessPath &path: paths) {
         threads.emplace_back(
                 thread(calculate_each_path, this->board, std::ref(path), this->depth, this->tree_type, this->print_res,
-                       this->color_sign));
+                       -this->color_sign));
     }
 
     for (auto &t: threads) {
         t.join();
     }
 
-    if (color_sign == TreeSearch::MIN_LAYER_SIGN) {
+    if (color_sign == TreeSearchBase::MAX_LAYER_SIGN) {
         sort(paths.begin(), paths.end(), [](auto l, auto r) { return l.value > r.value; });
     } else {
         sort(paths.begin(), paths.end(), [](auto l, auto r) { return l.value < r.value; });
@@ -78,7 +78,6 @@ ChessPath MultiThreadEvaluator::get_best_path() {
 
     cout << endl;
 
-//    string hline = "-------------------------------------------------------------------------------------";
     string hline = "=====================================================================================";
     string top_line = "===================================Evaluate Result===================================";
     cout << top_line << endl;

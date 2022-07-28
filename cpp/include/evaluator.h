@@ -21,14 +21,14 @@ public:
     int color_sign;
     bool print_res = true;
 
-    int alpha = TreeSearch::ALPHA_INIT_VAL;
-    int beta = TreeSearch::BETA_INIT_VAL;
+    int alpha = TreeSearchBase::ALPHA_INIT_VAL;
+    int beta = TreeSearchBase::BETA_INIT_VAL;
 
     SingleThreadEvaluator(Chessboard chessboard, int depth, TreeType tree_type) {
         this->board = chessboard;
         this->depth = depth;
         this->tree_type = tree_type;
-        this->color_sign = TreeSearch::MIN_LAYER_SIGN;
+        this->color_sign = TreeSearchBase::MAX_LAYER_SIGN;
     }
 
     SingleThreadEvaluator(Chessboard chessboard, int depth, TreeType tree_type, int color_sign) {
@@ -56,7 +56,7 @@ public:
         this->board = chessboard;
         this->depth = depth;
         this->tree_type = tree_type;
-        this->color_sign = TreeSearch::MIN_LAYER_SIGN;
+        this->color_sign = TreeSearchBase::MAX_LAYER_SIGN;
     }
 
     MultiThreadEvaluator(Chessboard chessboard, int depth, TreeType tree_type, int color_sign) {

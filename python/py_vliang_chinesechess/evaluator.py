@@ -1,7 +1,8 @@
 import subprocess
 import time
 
-from .chessboard import *
+from python.py_vliang_chinesechess.chessboard import Chessboard
+from python.py_vliang_chinesechess.path import ChessPath
 
 
 class TreeType:
@@ -67,6 +68,6 @@ if __name__ == '__main__':
     board = Chessboard()
     board.move_chess(ChessPath(2, 1, 2, 4))
     board.print_chessboard()
-    evaluator = MultiThreadEvaluator("../bin/vliang_py_interface", board, TreeType.MTDF, 8, Chessboard.MIN_LAYER_SIGN,
+    evaluator = MultiThreadEvaluator("../bin/vliang_py_interface", board, TreeType.MTDF, 8, Chessboard.MAX_LAYER_SIGN,
                                      ".res.txt")
     print(evaluator.get_best_path())

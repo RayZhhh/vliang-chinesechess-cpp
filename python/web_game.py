@@ -41,7 +41,7 @@ class VliangServer(BaseHTTPRequestHandler):
                                                   chessboard=eval_board,
                                                   tree_type=TreeType.MTDF_QUIE,
                                                   depth=6,
-                                                  color_sign=Chessboard.MIN_LAYER_SIGN,
+                                                  color_sign=Chessboard.MAX_LAYER_SIGN,
                                                   res_path='./.res.txt')
         path = evaluator.get_best_path()
         resp_msg = str(path.from_x) + ";" + str(path.from_y) + ";" + str(path.to_x) + ";" + str(path.to_y)

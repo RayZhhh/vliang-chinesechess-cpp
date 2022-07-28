@@ -89,9 +89,6 @@
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/evaluator.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/iter_deepening.h">
-			<Option target="vliang_chinese_chess"/>
-		</Unit>
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/mtdf.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
@@ -113,19 +110,22 @@
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/zobrist_code.h">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/alpha_beta.cpp">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/alpha_beta.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/chessboard.cpp">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/chessboard.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/evaluator.cpp">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/evaluator.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/quiescence.cpp">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/mtdf.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
-		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/sourse/tree_search.cpp">
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/quiescence.cpp">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/tree_search.cpp">
 			<Option target="vliang_chinese_chess"/>
 		</Unit>
 		<Unit filename="/Users/zhangrui/Developer/vliang-chinesechess-cpp/main.cpp">

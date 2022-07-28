@@ -129,125 +129,149 @@ vliang_chinese_chess/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/build
 .PHONY : vliang_chinese_chess/fast
 
-cpp/sourse/alpha_beta.o: cpp/sourse/alpha_beta.cpp.o
-.PHONY : cpp/sourse/alpha_beta.o
+cpp/source/alpha_beta.o: cpp/source/alpha_beta.cpp.o
+.PHONY : cpp/source/alpha_beta.o
 
 # target to build an object file
-cpp/sourse/alpha_beta.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.o
-.PHONY : cpp/sourse/alpha_beta.cpp.o
+cpp/source/alpha_beta.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.o
+.PHONY : cpp/source/alpha_beta.cpp.o
 
-cpp/sourse/alpha_beta.i: cpp/sourse/alpha_beta.cpp.i
-.PHONY : cpp/sourse/alpha_beta.i
+cpp/source/alpha_beta.i: cpp/source/alpha_beta.cpp.i
+.PHONY : cpp/source/alpha_beta.i
 
 # target to preprocess a source file
-cpp/sourse/alpha_beta.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.i
-.PHONY : cpp/sourse/alpha_beta.cpp.i
+cpp/source/alpha_beta.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.i
+.PHONY : cpp/source/alpha_beta.cpp.i
 
-cpp/sourse/alpha_beta.s: cpp/sourse/alpha_beta.cpp.s
-.PHONY : cpp/sourse/alpha_beta.s
+cpp/source/alpha_beta.s: cpp/source/alpha_beta.cpp.s
+.PHONY : cpp/source/alpha_beta.s
 
 # target to generate assembly for a file
-cpp/sourse/alpha_beta.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/alpha_beta.cpp.s
-.PHONY : cpp/sourse/alpha_beta.cpp.s
+cpp/source/alpha_beta.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.s
+.PHONY : cpp/source/alpha_beta.cpp.s
 
-cpp/sourse/chessboard.o: cpp/sourse/chessboard.cpp.o
-.PHONY : cpp/sourse/chessboard.o
+cpp/source/chessboard.o: cpp/source/chessboard.cpp.o
+.PHONY : cpp/source/chessboard.o
 
 # target to build an object file
-cpp/sourse/chessboard.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.o
-.PHONY : cpp/sourse/chessboard.cpp.o
+cpp/source/chessboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.o
+.PHONY : cpp/source/chessboard.cpp.o
 
-cpp/sourse/chessboard.i: cpp/sourse/chessboard.cpp.i
-.PHONY : cpp/sourse/chessboard.i
+cpp/source/chessboard.i: cpp/source/chessboard.cpp.i
+.PHONY : cpp/source/chessboard.i
 
 # target to preprocess a source file
-cpp/sourse/chessboard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.i
-.PHONY : cpp/sourse/chessboard.cpp.i
+cpp/source/chessboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.i
+.PHONY : cpp/source/chessboard.cpp.i
 
-cpp/sourse/chessboard.s: cpp/sourse/chessboard.cpp.s
-.PHONY : cpp/sourse/chessboard.s
+cpp/source/chessboard.s: cpp/source/chessboard.cpp.s
+.PHONY : cpp/source/chessboard.s
 
 # target to generate assembly for a file
-cpp/sourse/chessboard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/chessboard.cpp.s
-.PHONY : cpp/sourse/chessboard.cpp.s
+cpp/source/chessboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.s
+.PHONY : cpp/source/chessboard.cpp.s
 
-cpp/sourse/evaluator.o: cpp/sourse/evaluator.cpp.o
-.PHONY : cpp/sourse/evaluator.o
+cpp/source/evaluator.o: cpp/source/evaluator.cpp.o
+.PHONY : cpp/source/evaluator.o
 
 # target to build an object file
-cpp/sourse/evaluator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.o
-.PHONY : cpp/sourse/evaluator.cpp.o
+cpp/source/evaluator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.o
+.PHONY : cpp/source/evaluator.cpp.o
 
-cpp/sourse/evaluator.i: cpp/sourse/evaluator.cpp.i
-.PHONY : cpp/sourse/evaluator.i
+cpp/source/evaluator.i: cpp/source/evaluator.cpp.i
+.PHONY : cpp/source/evaluator.i
 
 # target to preprocess a source file
-cpp/sourse/evaluator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.i
-.PHONY : cpp/sourse/evaluator.cpp.i
+cpp/source/evaluator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.i
+.PHONY : cpp/source/evaluator.cpp.i
 
-cpp/sourse/evaluator.s: cpp/sourse/evaluator.cpp.s
-.PHONY : cpp/sourse/evaluator.s
+cpp/source/evaluator.s: cpp/source/evaluator.cpp.s
+.PHONY : cpp/source/evaluator.s
 
 # target to generate assembly for a file
-cpp/sourse/evaluator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/evaluator.cpp.s
-.PHONY : cpp/sourse/evaluator.cpp.s
+cpp/source/evaluator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.s
+.PHONY : cpp/source/evaluator.cpp.s
 
-cpp/sourse/quiescence.o: cpp/sourse/quiescence.cpp.o
-.PHONY : cpp/sourse/quiescence.o
+cpp/source/mtdf.o: cpp/source/mtdf.cpp.o
+.PHONY : cpp/source/mtdf.o
 
 # target to build an object file
-cpp/sourse/quiescence.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.o
-.PHONY : cpp/sourse/quiescence.cpp.o
+cpp/source/mtdf.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.o
+.PHONY : cpp/source/mtdf.cpp.o
 
-cpp/sourse/quiescence.i: cpp/sourse/quiescence.cpp.i
-.PHONY : cpp/sourse/quiescence.i
+cpp/source/mtdf.i: cpp/source/mtdf.cpp.i
+.PHONY : cpp/source/mtdf.i
 
 # target to preprocess a source file
-cpp/sourse/quiescence.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.i
-.PHONY : cpp/sourse/quiescence.cpp.i
+cpp/source/mtdf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.i
+.PHONY : cpp/source/mtdf.cpp.i
 
-cpp/sourse/quiescence.s: cpp/sourse/quiescence.cpp.s
-.PHONY : cpp/sourse/quiescence.s
+cpp/source/mtdf.s: cpp/source/mtdf.cpp.s
+.PHONY : cpp/source/mtdf.s
 
 # target to generate assembly for a file
-cpp/sourse/quiescence.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/quiescence.cpp.s
-.PHONY : cpp/sourse/quiescence.cpp.s
+cpp/source/mtdf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.s
+.PHONY : cpp/source/mtdf.cpp.s
 
-cpp/sourse/tree_search.o: cpp/sourse/tree_search.cpp.o
-.PHONY : cpp/sourse/tree_search.o
+cpp/source/quiescence.o: cpp/source/quiescence.cpp.o
+.PHONY : cpp/source/quiescence.o
 
 # target to build an object file
-cpp/sourse/tree_search.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.o
-.PHONY : cpp/sourse/tree_search.cpp.o
+cpp/source/quiescence.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.o
+.PHONY : cpp/source/quiescence.cpp.o
 
-cpp/sourse/tree_search.i: cpp/sourse/tree_search.cpp.i
-.PHONY : cpp/sourse/tree_search.i
+cpp/source/quiescence.i: cpp/source/quiescence.cpp.i
+.PHONY : cpp/source/quiescence.i
 
 # target to preprocess a source file
-cpp/sourse/tree_search.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.i
-.PHONY : cpp/sourse/tree_search.cpp.i
+cpp/source/quiescence.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.i
+.PHONY : cpp/source/quiescence.cpp.i
 
-cpp/sourse/tree_search.s: cpp/sourse/tree_search.cpp.s
-.PHONY : cpp/sourse/tree_search.s
+cpp/source/quiescence.s: cpp/source/quiescence.cpp.s
+.PHONY : cpp/source/quiescence.s
 
 # target to generate assembly for a file
-cpp/sourse/tree_search.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/sourse/tree_search.cpp.s
-.PHONY : cpp/sourse/tree_search.cpp.s
+cpp/source/quiescence.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.s
+.PHONY : cpp/source/quiescence.cpp.s
+
+cpp/source/tree_search.o: cpp/source/tree_search.cpp.o
+.PHONY : cpp/source/tree_search.o
+
+# target to build an object file
+cpp/source/tree_search.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.o
+.PHONY : cpp/source/tree_search.cpp.o
+
+cpp/source/tree_search.i: cpp/source/tree_search.cpp.i
+.PHONY : cpp/source/tree_search.i
+
+# target to preprocess a source file
+cpp/source/tree_search.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.i
+.PHONY : cpp/source/tree_search.cpp.i
+
+cpp/source/tree_search.s: cpp/source/tree_search.cpp.s
+.PHONY : cpp/source/tree_search.s
+
+# target to generate assembly for a file
+cpp/source/tree_search.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vliang_chinese_chess.dir/build.make CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.s
+.PHONY : cpp/source/tree_search.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -306,21 +330,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... vliang_chinese_chess"
-	@echo "... cpp/sourse/alpha_beta.o"
-	@echo "... cpp/sourse/alpha_beta.i"
-	@echo "... cpp/sourse/alpha_beta.s"
-	@echo "... cpp/sourse/chessboard.o"
-	@echo "... cpp/sourse/chessboard.i"
-	@echo "... cpp/sourse/chessboard.s"
-	@echo "... cpp/sourse/evaluator.o"
-	@echo "... cpp/sourse/evaluator.i"
-	@echo "... cpp/sourse/evaluator.s"
-	@echo "... cpp/sourse/quiescence.o"
-	@echo "... cpp/sourse/quiescence.i"
-	@echo "... cpp/sourse/quiescence.s"
-	@echo "... cpp/sourse/tree_search.o"
-	@echo "... cpp/sourse/tree_search.i"
-	@echo "... cpp/sourse/tree_search.s"
+	@echo "... cpp/source/alpha_beta.o"
+	@echo "... cpp/source/alpha_beta.i"
+	@echo "... cpp/source/alpha_beta.s"
+	@echo "... cpp/source/chessboard.o"
+	@echo "... cpp/source/chessboard.i"
+	@echo "... cpp/source/chessboard.s"
+	@echo "... cpp/source/evaluator.o"
+	@echo "... cpp/source/evaluator.i"
+	@echo "... cpp/source/evaluator.s"
+	@echo "... cpp/source/mtdf.o"
+	@echo "... cpp/source/mtdf.i"
+	@echo "... cpp/source/mtdf.s"
+	@echo "... cpp/source/quiescence.o"
+	@echo "... cpp/source/quiescence.i"
+	@echo "... cpp/source/quiescence.s"
+	@echo "... cpp/source/tree_search.o"
+	@echo "... cpp/source/tree_search.i"
+	@echo "... cpp/source/tree_search.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -54,9 +54,9 @@ public:
 
     void parse_color_sign(const string &color_str) {
         if ("MAX_LAYER_SIGN" == color_str) {
-            this->color_sign = TreeSearch::MAX_LAYER_SIGN;
+            this->color_sign = TreeSearchBase::MAX_LAYER_SIGN;
         } else {
-            this->color_sign = TreeSearch::MIN_LAYER_SIGN;
+            this->color_sign = TreeSearchBase::MIN_LAYER_SIGN;
         }
     }
 };

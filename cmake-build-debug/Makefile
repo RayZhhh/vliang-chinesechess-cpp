@@ -117,7 +117,7 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named vliang_chinese_chess
+# Target rules for targets named vliang_py_interface
 
 # Build rule for target.
 vliang_chinese_chess: cmake_check_build_system

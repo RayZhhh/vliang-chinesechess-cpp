@@ -8,7 +8,6 @@
 #include "alpha_beta.h"
 #include "mtdf.h"
 #include "quiescence.h"
-#include "iter_deepening.h"
 #include <memory>
 
 
@@ -25,7 +24,7 @@ enum TreeType {
 class TreeCreator {
 public:
 
-    static shared_ptr<TreeSearch> get_tree(Chessboard board, TreeType treeType) {
+    static shared_ptr<TreeSearchBase> get_tree(Chessboard board, TreeType treeType) {
         switch (treeType) {
 
             case ALPHA_BETA:

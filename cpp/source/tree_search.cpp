@@ -5,8 +5,7 @@
 #include "../include/tree_search.h"
 
 
-void TreeSearch::update_lo_bound(TableMsg *msg, int lo_bound, int color_sign, int depth, int hash, int ver,
-                                 ChessPath &path) {
+void TreeSearchBase::update_lo_bound(TableMsg *msg, int lo_bound, int color_sign, int depth, int hash, int ver, ChessPath &path) {
     // 如果能找到当前盘面
     if (msg != nullptr) {
         // 当前局面搜索更深
@@ -34,8 +33,7 @@ void TreeSearch::update_lo_bound(TableMsg *msg, int lo_bound, int color_sign, in
 }
 
 
-void TreeSearch::update_up_bound(TableMsg *msg, int up_bound, int color_sign, int depth, int hash, int ver,
-                                 ChessPath &path) {
+void TreeSearchBase::update_up_bound(TableMsg *msg, int up_bound, int color_sign, int depth, int hash, int ver, ChessPath &path) {
     // 如果能找到当前盘面
     if (msg != nullptr) {
         // 当前局面搜索更深
