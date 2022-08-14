@@ -35,6 +35,8 @@ ctime
 -
 iomanip
 -
+path_filter.h
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/path_filter.h
 
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/mtdf.h
 tree_search.h
@@ -43,6 +45,8 @@ alpha_beta.h
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/alpha_beta.h
 quiescence.h
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/quiescence.h
+
+/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/path_filter.h
 
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/quiescence.h
 tree_search.h
@@ -73,16 +77,6 @@ transition_table.hpp
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/weights.h
 
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/zobrist_code.h
-
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/evaluator.cpp
-../include/evaluator.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/evaluator.h
-
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/main.cpp
-cpp/include/evaluator.h
-/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/include/evaluator.h
-stack
--
 
 /Users/zhangrui/Developer/vliang-chinesechess-cpp/py_interface.cpp
 fstream

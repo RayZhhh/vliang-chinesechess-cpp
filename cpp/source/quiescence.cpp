@@ -5,6 +5,7 @@
 #include "../include/quiescence.h"
 
 int Quiescence::quiescence(ChessPath &path, int alpha, int beta, int maxDepth, int colorSign) {
+
     // 判断生死
     if (path.eat == 5) {
         return MIN_EVAL_VAL;
@@ -185,6 +186,7 @@ int Quiescence::quiescence(ChessPath &path, int alpha, int beta, int maxDepth, i
 
 
 int Quiescence::alpha_beta_quiescence_with_memory_eval(ChessPath &path, int alpha, int beta, int depth, int colorSign) {
+
     // 判断生死
     if (path.eat == -5) {
         return MAX_EVAL_VAL;

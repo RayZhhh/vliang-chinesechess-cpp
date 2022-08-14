@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/mtdf.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.o"
   "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/quiescence.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.o"
   "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/tree_search.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.o"
+  "/Users/zhangrui/Developer/vliang-chinesechess-cpp/evaluator_so.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/evaluator_so.cpp.o"
   "/Users/zhangrui/Developer/vliang-chinesechess-cpp/main.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/main.cpp.o"
   "/Users/zhangrui/Developer/vliang-chinesechess-cpp/py_interface.cpp" "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release/CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o"
   )

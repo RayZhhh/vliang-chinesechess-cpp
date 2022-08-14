@@ -16,7 +16,6 @@ calculate_each_path(Chessboard board, ChessPath &path, int depth, TreeType type,
     cout.flush();
 }
 
-
 string tree_to_string(TreeType type) {
     switch (type) {
         case ALPHA_BETA:
@@ -42,11 +41,15 @@ string tree_to_string(TreeType type) {
     }
 }
 
-
 ChessPath MultiThreadEvaluator::get_best_path() {
+    this->evaluate_all_path();
+    return this->all_paths[0];
+}
+
+void MultiThreadEvaluator::evaluate_all_path() {
     auto start_time = chrono::steady_clock::now();
 
-    paths_t paths;
+    paths_t &paths = this->all_paths;
     this->board.get_all_paths(-this->color_sign, paths);
 
     if (print_res) {
@@ -59,6 +62,7 @@ ChessPath MultiThreadEvaluator::get_best_path() {
         cout << "evaluating:  ";
     }
 
+    // 创建线程
     vector<thread> threads;
     for (ChessPath &path: paths) {
         threads.emplace_back(
@@ -66,31 +70,36 @@ ChessPath MultiThreadEvaluator::get_best_path() {
                        -this->color_sign));
     }
 
+    // 让线程合并到主线程
     for (auto &t: threads) {
         t.join();
     }
 
+    // 如果最大层，那么将价值从大到小排序，反之从小到大排序
     if (color_sign == TreeSearchBase::MAX_LAYER_SIGN) {
         sort(paths.begin(), paths.end(), [](auto l, auto r) { return l.value > r.value; });
     } else {
         sort(paths.begin(), paths.end(), [](auto l, auto r) { return l.value < r.value; });
     }
 
-    cout << endl;
-
-    string hline = "=====================================================================================";
-    string top_line = "===================================Evaluate Result===================================";
-    cout << top_line << endl;
-    for (int i = 0; i < print_res_num && i < paths.size(); i += 2) {
-        cout << "| ";
-        printf("%-39s", paths[i].to_string().c_str());
-        cout << " | ";
-        printf("%-39s", i + 1 < print_res_num && i + 1 < paths.size() ? paths[i + 1].to_string().c_str() : "");
-        cout << " |" << endl;
-        cout << hline << endl;
-    }
-
+    // 打印评估结果
     if (print_res) {
+
+        cout << endl;
+
+        string hline = "=====================================================================================";
+        string top_line = "===================================Evaluate Result===================================";
+        cout << top_line << endl;
+
+        for (int i = 0; i < print_res_num && i < paths.size(); i += 2) {
+            cout << "| ";
+            printf("%-39s", paths[i].to_string().c_str());
+            cout << " | ";
+            printf("%-39s", i + 1 < print_res_num && i + 1 < paths.size() ? paths[i + 1].to_string().c_str() : "");
+            cout << " |" << endl;
+            cout << hline << endl;
+        }
+
         string best_msg = "Best Path: " + paths[0].to_string();
         printf("| %-82s|\n", best_msg.c_str());
         cout << hline << endl;
@@ -101,22 +110,37 @@ ChessPath MultiThreadEvaluator::get_best_path() {
         printf("| %-82s|\n", tree_msg.c_str());
         cout << hline << endl << endl;
     }
-
-    return paths[0];
 }
 
+paths_t MultiThreadEvaluator::get_all_evaluated_path() {
+    this->evaluate_all_path();
+    return this->all_paths;
+}
 
 ChessPath DeepeningMultiThreadEvaluator::get_best_path() {
+    evaluate_all_path();
+    return this->all_paths[0];
+}
+
+paths_t DeepeningMultiThreadEvaluator::get_all_evaluated_path() {
+    evaluate_all_path();
+    return this->all_paths;
+}
+
+void DeepeningMultiThreadEvaluator::evaluate_all_path() {
     int real_search_depth = this->depth;
-    ChessPath ret;
 
     while (true) {
 
         auto start_time = chrono::steady_clock::now();
-        ret = MultiThreadEvaluator::get_best_path();
+
+        // 进行评估
+        MultiThreadEvaluator::evaluate_all_path();
+
         float eval_time = (float) (chrono::duration_cast<chrono::milliseconds>(
                 chrono::steady_clock::now() - start_time).count()) / 1000;
 
+        // 如果评估时间大于规定时间那么结束搜索，否则进行更深层的搜索
         if (eval_time > this->time_threshold_in_second) {
             break;
         } else {
@@ -124,6 +148,6 @@ ChessPath DeepeningMultiThreadEvaluator::get_best_path() {
         }
     }
 
+    // 恢复保存的深度
     this->depth = real_search_depth;
-    return ret;
 }

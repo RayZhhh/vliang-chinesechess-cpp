@@ -28,6 +28,7 @@ int MTDF_Searching::mtdf_eval(ChessPath &chess_path, int beta, int depth, int co
             lowerBound = val;
         }
     }
+
     return val;
 }
 
@@ -46,12 +47,17 @@ void MTDF_Searching::estimate_init_value(ChessPath &chess_path, int depth, int c
                                                         color_sign);
 }
 
+
+// ========================================= MTDF_Quiescence_Searching 实现 =========================================
+
+
 int MTDF_Quiescence_Searching::mtdf_quiescence_eval(ChessPath &chess_path, int beta, int depth, int color_sign) {
     if (this->estimate_MTDF_init_value) {
         estimate_init_value(chess_path, depth, color_sign);
     }
 
-    int val = this->mtdf_init_value;
+    // 获取 beta 的初始值
+    int val = MTDF_Quiescence_Searching::mtdf_init_value;
 
     int upperBound = MAX_EVAL_VAL;
     int lowerBound = MIN_EVAL_VAL;
@@ -70,6 +76,7 @@ int MTDF_Quiescence_Searching::mtdf_quiescence_eval(ChessPath &chess_path, int b
             lowerBound = val;
         }
     }
+
     return val;
 }
 

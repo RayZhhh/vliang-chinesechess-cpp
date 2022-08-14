@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/zhangrui/Developer/vliang-chinesechess-cpp
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" -S /Users/zhangrui/Developer/vliang-chinesechess-cpp -B /Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/zhangrui/Developer/vliang-chinesechess-cpp/cmake-build-release

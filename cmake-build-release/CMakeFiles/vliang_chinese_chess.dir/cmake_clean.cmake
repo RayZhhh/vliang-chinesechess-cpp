@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/vliang_chinese_chess.dir/cpp/source/mtdf.cpp.o"
   "CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.o"
   "CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.o"
+  "CMakeFiles/vliang_chinese_chess.dir/evaluator_so.cpp.o"
   "CMakeFiles/vliang_chinese_chess.dir/main.cpp.o"
   "CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o"
   "vliang_chinese_chess"

@@ -11,6 +11,7 @@
 
 
 class MTDF_Searching : public AlphaBetaWithMemory {
+
 public:
     /**
      * beta变量的初始值，这个值越接近真实值，计算时间越快
@@ -43,12 +44,13 @@ public:
 
 
 class MTDF_Quiescence_Searching : public Quiescence {
+
 public:
 
     /**
      * beta变量的初始值，这个值越接近真实值，计算时间越快
      */
-    int mtdf_init_value = 0;
+    int mtdf_init_value;
 
     /**
      * 是否估计beta变量的初始值
@@ -83,4 +85,5 @@ public:
 
     int eval_path_val(const ChessPath &path, int depth) override;
 };
+
 #endif //VLIANG_CHINESE_CHESS_MTDF_H

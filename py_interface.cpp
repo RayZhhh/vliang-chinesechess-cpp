@@ -5,7 +5,7 @@
 #include <iostream>
 #include "cpp/include/evaluator.h"
 
-//#define COMPILE_PY_INTERFACE
+#define COMPILE_PY_INTERFACE
 
 #ifdef COMPILE_PY_INTERFACE
 
@@ -65,7 +65,13 @@ public:
 void py_parse(const char **argv) {
 
     if (argv[1] == nullptr || argv[2] == nullptr || argv[3] == nullptr || argv[4] == nullptr || argv[5] == nullptr) {
-        std::cerr << "error: at least 5 args." << endl;
+        cerr << "Required parameters:" << endl;
+        cerr << "argv[0]: the sequence of the chessboard." << endl;
+        cerr << "argv[1]: the type of the searching tree (or searching algorithm)." << endl;
+        cerr << "argv[2]: the search depth." << endl;
+        cerr << "argv[3]: the target chess color." << endl;
+        cerr << "argv[4]: the path of the file which stores the evaluate results." << endl;
+        return;
     }
 
     ArgParser parser;

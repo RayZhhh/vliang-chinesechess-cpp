@@ -56,7 +56,7 @@ public:
      * 当达到 search_depth 的常规搜索深度时，如果需要静态搜索且达到静态搜索条件（正在发生吃子），那么将出发静态搜索，
      * 这个变量表示静态搜索附加的额外搜索深度。即实际最大搜索深度为：search_depth + QUIESCENCE_MAX_DEPTH。
      */
-    const static int QUIESCENCE_MAX_DEPTH = 10;
+    const static int QUIESCENCE_MAX_DEPTH = 9;
 
     /**
      * 棋盘。
@@ -137,27 +137,30 @@ public:
     }
 
     /**
-     * 当前局面的上界值
+     * 当前局面的上界值和下界值。
+     *
+     * 如果在进行 alpha-beta 搜索时发生 alpha-beta 剪枝，那么将更新这两个值。
+     * 在进行每一步的搜索时先查询置换表，如果查询到表项，那么更新 alpha 和 beta 的值。
+     *
+     * 由于在进行零窗口搜索时，beta = alpha + 1，因此需要保存棋盘的上下界，而不是保存当前深度下决策的最好值。
      */
     int up_bound;
-
-    /**
-     * 当前局面的下界值
-     */
     int lo_bound;
 
     /**
-     * 最后一次更新当前局面上届值时的搜索深度
+     * up_depth: 最后一次更新当前局面上界值时的搜索深度。
+     * lo_depth: 最后一次更新当前局面下界值时的搜索深度。
+     *
+     * 查询到表项，更新 alpha 和 beta 的值的时候，如果置换表中的上界值和下界值的深度 >= 当前搜索深度，
+     * 那么进行更新，否则不进行更新。
      */
     int up_depth;
-
-    /**
-     * 最后一次更新当前局面下界值时的搜索深度
-     */
     int lo_depth;
 
     /**
-     * 引发更新的路径
+     * 引发更新的路径。
+     *
+     * 如果在搜索中查询到
      */
     ChessPath best_path;
 };

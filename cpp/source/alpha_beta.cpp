@@ -12,6 +12,7 @@ int AlphaBeta::alpha_beta_eval(ChessPath &path, int alpha, int beta, int depth, 
     } else if (path.eat == 5) {
         return MIN_EVAL_VAL;
     }
+
     // 到达深度
     if (depth == 1) {
         chessboard.move_chess(path);
@@ -19,6 +20,7 @@ int AlphaBeta::alpha_beta_eval(ChessPath &path, int alpha, int beta, int depth, 
         chessboard.undo_move_chess(path);
         return val;
     }
+
     // 落子
     chessboard.move_chess(path);
     // 落子后先判断是否有对将情况
@@ -31,6 +33,7 @@ int AlphaBeta::alpha_beta_eval(ChessPath &path, int alpha, int beta, int depth, 
             return MIN_EVAL_VAL - depth;
         }
     }
+
     // max层
     if (colorSign == MAX_LAYER_SIGN) {
         int maxEval = MIN_EVAL_VAL;
@@ -81,20 +84,17 @@ int AlphaBeta::alpha_beta_eval(ChessPath &path, int alpha, int beta, int depth, 
     }
 }
 
-
 int AlphaBeta::eval_path_val(const ChessPath &path, int depth) {
     this->search_depth = depth;
     return this->alpha_beta_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL, this->search_depth,
                                  MIN_LAYER_SIGN);
 }
 
-
 int AlphaBeta::eval_path_val(const ChessPath &path, int depth, int color_sign) {
     this->search_depth = depth;
     return this->alpha_beta_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL, this->search_depth,
                                  color_sign);
 }
-
 
 int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha, int beta, int depth, int colorSign) {
 
@@ -256,13 +256,11 @@ int AlphaBetaWithMemory::alpha_beta_with_memory_eval(ChessPath &path, int alpha,
     }
 }
 
-
 int AlphaBetaWithMemory::eval_path_val(const ChessPath &path, int depth) {
     this->search_depth = depth;
     return this->alpha_beta_with_memory_eval(const_cast<ChessPath &>(path), ALPHA_INIT_VAL, BETA_INIT_VAL,
                                              this->search_depth, MIN_LAYER_SIGN);
 }
-
 
 int AlphaBetaWithMemory::eval_path_val(const ChessPath &path, int depth, int color_sign) {
     this->search_depth = depth;

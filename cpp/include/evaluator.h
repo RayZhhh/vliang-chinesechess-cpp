@@ -10,46 +10,71 @@
 #include <thread>
 #include <ctime>
 #include <iomanip>
+#include "path_filter.h"
 
 
-class SingleThreadEvaluator {
-public:
-
-    TreeType tree_type;
-    Chessboard board;
-    int depth;
-    int color_sign;
-    bool print_res = true;
-
-    int alpha = TreeSearchBase::ALPHA_INIT_VAL;
-    int beta = TreeSearchBase::BETA_INIT_VAL;
-
-    SingleThreadEvaluator(Chessboard chessboard, int depth, TreeType tree_type) {
-        this->board = chessboard;
-        this->depth = depth;
-        this->tree_type = tree_type;
-        this->color_sign = TreeSearchBase::MAX_LAYER_SIGN;
-    }
-
-    SingleThreadEvaluator(Chessboard chessboard, int depth, TreeType tree_type, int color_sign) {
-        this->board = chessboard;
-        this->depth = depth;
-        this->tree_type = tree_type;
-        this->color_sign = color_sign;
-    }
-
-    virtual ChessPath get_best_path() = 0;
-};
+//class SingleThreadEvaluator {
+//public:
+//
+//    TreeType tree_type;
+//    Chessboard board;
+//    int depth;
+//    int color_sign;
+//    bool print_res = true;
+//
+//    int alpha = TreeSearchBase::ALPHA_INIT_VAL;
+//    int beta = TreeSearchBase::BETA_INIT_VAL;
+//
+//    SingleThreadEvaluator(Chessboard chessboard, int depth, TreeType tree_type) {
+//        this->board = chessboard;
+//        this->depth = depth;
+//        this->tree_type = tree_type;
+//        this->color_sign = TreeSearchBase::MAX_LAYER_SIGN;
+//    }
+//
+//    SingleThreadEvaluator(Chessboard chessboard, int depth, TreeType tree_type, int color_sign) {
+//        this->board = chessboard;
+//        this->depth = depth;
+//        this->tree_type = tree_type;
+//        this->color_sign = color_sign;
+//    }
+//
+//    virtual ChessPath get_best_path() = 0;
+//};
 
 
 class MultiThreadEvaluator {
 public:
 
+    /**
+     * 采用的搜索树的类型
+     */
     TreeType tree_type;
+
+    /**
+     * 需要搜索的棋盘
+     */
     Chessboard board;
+
+    /**
+     * 搜索深度
+     */
     int depth;
+
+    /**
+     * 搜索的棋子颜色
+     */
     int color_sign;
+
+    /**
+     * 是否打印结果
+     */
     bool print_res = true;
+
+    /**
+     * 在控制台打印的结果数量（最大数量）
+     * 如果 print_res 为 true，那么这个变量有效
+     */
     int print_res_num = 14;
 
     MultiThreadEvaluator(Chessboard chessboard, int depth, TreeType tree_type) {
@@ -67,6 +92,13 @@ public:
     }
 
     virtual ChessPath get_best_path();
+
+    virtual paths_t get_all_evaluated_path();
+
+protected:
+    paths_t all_paths;
+
+    virtual void evaluate_all_path();
 };
 
 
@@ -89,6 +121,11 @@ public:
     float time_threshold_in_second = 0.8f;
 
     ChessPath get_best_path() override;
+
+    paths_t get_all_evaluated_path() override;
+
+protected:
+    void evaluate_all_path() override;
 };
 
 
