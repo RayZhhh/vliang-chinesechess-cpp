@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=gnu++2a -o CMakeFiles/vliang_chinese_chess.dir/main.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/main.cpp",
+  "file": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/main.cpp"
+},
+{
+  "directory": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=gnu++2a -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/chessboard.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/chessboard.cpp",
+  "file": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/chessboard.cpp"
+},
+{
+  "directory": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=gnu++2a -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/tree_search.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/tree_search.cpp",
+  "file": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/tree_search.cpp"
+},
+{
+  "directory": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=gnu++2a -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/alpha_beta.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/alpha_beta.cpp",
+  "file": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/alpha_beta.cpp"
+},
+{
+  "directory": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=gnu++2a -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/quiescence.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/quiescence.cpp",
+  "file": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/quiescence.cpp"
+},
+{
+  "directory": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=gnu++2a -o CMakeFiles/vliang_chinese_chess.dir/cpp/source/evaluator.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/evaluator.cpp",
+  "file": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/cpp/source/evaluator.cpp"
+},
+{
+  "directory": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=gnu++2a -o CMakeFiles/vliang_chinese_chess.dir/py_interface.cpp.o -c /Users/zhangrui/Developer/vliang-chinesechess-cpp/py_interface.cpp",
+  "file": "/Users/zhangrui/Developer/vliang-chinesechess-cpp/py_interface.cpp"
+}
+]

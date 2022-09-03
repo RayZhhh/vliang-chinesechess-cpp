@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="vliang_chinese_chess"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vliang_chinese_chess">
+				<Option output="/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/vliang_chinese_chess" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 vliang_chinese_chess"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vliang_chinese_chess/fast">
+				<Option output="/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/vliang_chinese_chess" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 vliang_chinese_chess/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/zhangrui/Developer/yoll-chinesechess/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/include/alpha_beta.h">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/include/chessboard.h">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/include/evaluator.h">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/include/mtdf.h">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/include/path_filter.h">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/include/quiescence.h">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/include/transition_table.hpp">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/include/tree_creator.hpp">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/include/tree_search.h">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/include/weights.h">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/include/zobrist_code.h">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/source/alpha_beta.cpp">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/source/chessboard.cpp">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/source/evaluator.cpp">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/source/mtdf.cpp">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/source/quiescence.cpp">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/cpp/source/tree_search.cpp">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/main.cpp">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/py_interface.cpp">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/test/evaluator_so.cpp">
+			<Option target="vliang_chinese_chess"/>
+		</Unit>
+		<Unit filename="/Users/zhangrui/Developer/yoll-chinesechess/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

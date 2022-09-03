@@ -1,0 +1,446 @@
+void Chessboard::get_path_of_1(int x, int y, paths_t &ret) {
+    int colorSign = board[x][y] > 0 ? 1 : -1;
+
+    // 向上寻找路径
+    if (x >= 1) {
+        for (int i = x - 1; i >= 0; i--) {
+            if (board[i][y] == 0) {
+                ret.emplace_back(ChessPath(x, y, i, y));
+            } else if (board[i][y] * colorSign > 0) {
+                break;
+            } else if (board[i][y] * colorSign < 0) {
+                ret.emplace_back(ChessPath(x, y, i, y, board[i][y]));
+                break;
+            }
+        }
+    }
+
+    // 向下寻找路径
+    if (x <= 8) {
+        for (int i = x + 1; i <= 9; i++) {
+            if (board[i][y] == 0) {
+                ret.emplace_back(ChessPath(x, y, i, y));
+            } else if (board[i][y] * colorSign > 0) {
+                break;
+            } else if (board[i][y] * colorSign < 0) {
+                ret.emplace_back(ChessPath(x, y, i, y, board[i][y]));
+                break;
+            }
+        }
+    }
+
+    // 向左寻找路径
+    if (y >= 1) {
+        for (int i = y - 1; i >= 0; i--) {
+            if (board[x][i] == 0) {
+                ret.emplace_back(ChessPath(x, y, x, i));
+            } else if (board[x][i] * colorSign > 0) {
+                break;
+            } else if (board[x][i] * colorSign < 0) {
+                ret.emplace_back(ChessPath(x, y, x, i, board[x][i]));
+                break;
+            }
+        }
+    }
+
+    // 向右寻找路径
+    if (y <= 7) {
+        for (int i = y + 1; i <= 8; i++) {
+            if (board[x][i] == 0) {
+                ret.emplace_back(ChessPath(x, y, x, i));
+            } else if (board[x][i] * colorSign > 0) {
+                break;
+            } else if (board[x][i] * colorSign < 0) {
+                ret.emplace_back(ChessPath(x, y, x, i, board[x][i]));
+                break;
+            }
+        }
+    }
+}
+
+void Chessboard::get_path_of_2(int x, int y, paths_t &ret) {
+    int colorSign = board[x][y] > 0 ? 1 : -1;
+
+    // 每个马当前最多有八种跳法，判断蹩马腿情况
+
+    // 左上方
+    if (x >= 2 && y >= 1 && board[x - 1][y] == 0) {
+        // 没有棋子或是对方的棋子
+        if (board[x - 2][y - 1] * colorSign <= 0) {
+            ret.emplace_back(ChessPath(x, y, x - 2, y - 1, board[x - 2][y - 1]));
+        }
+    }
+    if (x >= 1 && y >= 2 && board[x][y - 1] == 0) {
+        if (board[x - 1][y - 2] * colorSign <= 0) {
+            ret.emplace_back(ChessPath(x, y, x - 1, y - 2, board[x - 1][y - 2]));
+        }
+    }
+
+    // 右上方
+    if (x >= 2 && y <= 7 && board[x - 1][y] == 0) {
+        if (board[x - 2][y + 1] * colorSign <= 0) {
+            ret.emplace_back(ChessPath(x, y, x - 2, y + 1, board[x - 2][y + 1]));
+        }
+    }
+    if (x >= 1 && y <= 6 && board[x][y + 1] == 0) {
+        if (board[x - 1][y + 2] * colorSign <= 0) {
+            ret.emplace_back(ChessPath(x, y, x - 1, y + 2, board[x - 1][y + 2]));
+        }
+    }
+
+    // 左下方
+    if (x <= 7 && y >= 1 && board[x + 1][y] == 0) {
+        if (board[x + 2][y - 1] * colorSign <= 0) {
+            ret.emplace_back(ChessPath(x, y, x + 2, y - 1, board[x + 2][y - 1]));
+        }
+    }
+    if (x <= 8 && y >= 2 && board[x][y - 1] == 0) {
+        if (board[x + 1][y - 2] * colorSign <= 0) {
+            ret.emplace_back(ChessPath(x, y, x + 1, y - 2, board[x + 1][y - 2]));
+        }
+    }
+
+    // 右下方
+    if (x <= 7 && y <= 7 && board[x + 1][y] == 0) {
+        if (board[x + 2][y + 1] * colorSign <= 0) {
+            ret.emplace_back(ChessPath(x, y, x + 2, y + 1, board[x + 2][y + 1]));
+        }
+    }
+    if (x <= 8 && y <= 6 && board[x][y + 1] == 0) {
+        if (board[x + 1][y + 2] * colorSign <= 0) {
+            ret.emplace_back(ChessPath(x, y, x + 1, y + 2, board[x + 1][y + 2]));
+        }
+    }
+}
+
+void Chessboard::get_path_of_3(int x, int y, paths_t &ret) {
+    int colorSign = board[x][y] > 0 ? 1 : -1;
+    if (colorSign > 0) {
+        // 左上
+        if ((x == 9 && y == 2) || (x == 7 && y == 4) || (x == 9 && y == 6) || (x == 7 && y == 8)) {
+            if (board[x - 1][y - 1] == 0 && board[x - 2][y - 2] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x - 2, y - 2, board[x - 2][y - 2]));
+            }
+        }
+
+        // 右上
+        if ((x == 7 && y == 0) || (x == 9 && y == 2) || (x == 7 && y == 4) || (x == 9 && y == 6)) {
+            if (board[x - 1][y + 1] == 0 && board[x - 2][y + 2] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x - 2, y + 2, board[x - 2][y + 2]));
+            }
+        }
+
+        // 左下
+        if ((x == 5 && y == 2) || (x == 7 && y == 4) || (x == 5 && y == 6) || (x == 7 && y == 8)) {
+            if (board[x + 1][y - 1] == 0 && board[x + 2][y - 2] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x + 2, y - 2, board[x + 2][y - 2]));
+            }
+        }
+
+        // 右下
+        if ((x == 7 && y == 0) || (x == 5 && y == 2) || (x == 7 && y == 4) || (x == 5 && y == 6)) {
+            if (board[x + 1][y + 1] == 0 && board[x + 2][y + 2] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x + 2, y + 2, board[x + 2][y + 2]));
+            }
+        }
+    } else {
+        // 左上
+        if ((x == 4 && y == 2) || (x == 2 && y == 4) || (x == 2 && y == 8) || (x == 4 && y == 6)) {
+            if (board[x - 1][y - 1] == 0 && board[x - 2][y - 2] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x - 2, y - 2, board[x - 2][y - 2]));
+            }
+        }
+
+        // 右上
+        if ((x == 4 && y == 2) || (x == 2 && y == 0) || (x == 2 && y == 4) || (x == 4 && y == 6)) {
+            if (board[x - 1][y + 1] == 0 && board[x - 2][y + 2] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x - 2, y + 2, board[x - 2][y + 2]));
+            }
+        }
+
+        // 左下
+        if ((x == 0 && y == 2) || (x == 2 && y == 4) || (x == 0 && y == 6) || (x == 2 && y == 8)) {
+            if (board[x + 1][y - 1] == 0 && board[x + 2][y - 2] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x + 2, y - 2, board[x + 2][y - 2]));
+            }
+        }
+
+        // 右下
+        if ((x == 2 && y == 0) || (x == 0 && y == 2) || (x == 2 && y == 4) || (x == 0 && y == 6)) {
+            if (board[x + 1][y + 1] == 0 && board[x + 2][y + 2] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x + 2, y + 2, board[x + 2][y + 2]));
+            }
+        }
+    }
+}
+
+
+void Chessboard::get_path_of_4(int x, int y, paths_t &ret) {
+    int colorSign = board[x][y] > 0 ? 1 : -1;
+    if (colorSign > 0) {
+        // 左上
+        if ((x == 8 && y == 4) || (x == 9 && y == 5)) {
+            if (board[x - 1][y - 1] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x - 1, y - 1, board[x - 1][y - 1]));
+            }
+        }
+
+        // 右上
+        if ((x == 8 && y == 4) || (x == 9 && y == 3)) {
+            if (board[x - 1][y + 1] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x - 1, y + 1, board[x - 1][y + 1]));
+            }
+        }
+
+        // 左下
+        if ((x == 8 && y == 4) || (x == 7 && y == 5)) {
+            if (board[x + 1][y - 1] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x + 1, y - 1, board[x + 1][y - 1]));
+            }
+        }
+
+        // 右下
+        if ((x == 8 && y == 4) || (x == 7 && y == 3)) {
+            if (board[x + 1][y + 1] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x + 1, y + 1, board[x + 1][y + 1]));
+            }
+        }
+    } else {
+        // 左上
+        if ((x == 1 && y == 4) || (x == 2 && y == 5)) {
+            if (board[x - 1][y - 1] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x - 1, y - 1, board[x - 1][y - 1]));
+            }
+        }
+
+        // 右上
+        if ((x == 1 && y == 4) || (x == 2 && y == 3)) {
+            if (board[x - 1][y + 1] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x - 1, y + 1, board[x - 1][y + 1]));
+            }
+        }
+
+        // 左下
+        if ((x == 1 && y == 4) || (x == 0 && y == 5)) {
+            if (board[x + 1][y - 1] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x + 1, y - 1, board[x + 1][y - 1]));
+            }
+        }
+
+        // 右下
+        if ((x == 1 && y == 4) || (x == 0 && y == 3)) {
+            if (board[x + 1][y + 1] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x + 1, y + 1, board[x + 1][y + 1]));
+            }
+        }
+    }
+}
+
+void Chessboard::get_path_of_5(int x, int y, paths_t &ret) {
+    int colorSign = board[x][y] > 0 ? 1 : -1;
+    if (colorSign > 0) {
+        // 上
+        if (x >= 8) {
+            if (board[x - 1][y] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x - 1, y, board[x - 1][y]));
+            }
+        }
+
+        // 下
+        if (x <= 8) {
+            if (board[x + 1][y] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x + 1, y, board[x + 1][y]));
+            }
+        }
+
+        // 左
+        if (y >= 4) {
+            if (board[x][y - 1] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x, y - 1, board[x][y - 1]));
+            }
+        }
+
+        // 右
+        if (y <= 4) {
+            if (board[x][y + 1] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x, y + 1, board[x][y + 1]));
+            }
+        }
+    } else {
+        // 上
+        if (x >= 1) {
+            if (board[x - 1][y] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x - 1, y, board[x - 1][y]));
+            }
+        }
+
+        // 下
+        if (x <= 1) {
+            if (board[x + 1][y] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x + 1, y, board[x + 1][y]));
+            }
+        }
+
+        // 左
+        if (y >= 4) {
+            if (board[x][y - 1] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x, y - 1, board[x][y - 1]));
+            }
+        }
+
+        // 右
+        if (y <= 4) {
+            if (board[x][y + 1] * colorSign <= 0) {
+                ret.emplace_back(ChessPath(x, y, x, y + 1, board[x][y + 1]));
+            }
+        }
+    }
+}
+
+
+void Chessboard::get_path_of_6(int x, int y, paths_t &ret) {
+    int colorSign = board[x][y] > 0 ? 1 : -1;
+    // 上
+    if (x >= 1) {
+        int i = x - 1;
+        for (; i >= 0; i--) {
+            if (board[i][y] == 0) {
+                ret.emplace_back(ChessPath(x, y, i, y));
+            } else {
+                break;
+            }
+        }
+        if (i >= 1) {
+            for (int j = i - 1; j >= 0; j--) {
+                if (board[j][y] != 0) {
+                    // 对方棋子，可将其吃掉，退出循环
+                    if (board[j][y] * colorSign < 0) {
+                        ret.emplace_back(ChessPath(x, y, j, y, board[j][y]));
+                        break;
+                    } else { // 己方棋子，退出循环
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    // 下
+    if (x <= 8) {
+        int i = x + 1;
+        for (; i <= 9; i++) {
+            if (board[i][y] == 0) {
+                ret.emplace_back(ChessPath(x, y, i, y));
+            } else {
+                break;
+            }
+        }
+        if (i <= 8) {
+            for (int j = i + 1; j <= 9; j++) {
+                if (board[j][y] != 0) {
+                    // 对方棋子，可将其吃掉，退出循环
+                    if (board[j][y] * colorSign < 0) {
+                        ret.emplace_back(ChessPath(x, y, j, y, board[j][y]));
+                        break;
+                    } else { // 己方棋子，退出循环
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    // 左
+    if (y >= 1) {
+        int i = y - 1;
+        for (; i >= 0; i--) {
+            if (board[x][i] == 0) {
+                ret.emplace_back(ChessPath(x, y, x, i));
+            } else {
+                break;
+            }
+        }
+        if (i >= 1) {
+            for (int j = i - 1; j >= 0; j--) {
+                if (board[x][j] != 0) {
+                    if (board[x][j] * colorSign < 0) {
+                        ret.emplace_back(ChessPath(x, y, x, j, board[x][j]));
+                        break;
+                    } else {
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    // 右
+    if (y <= 7) {
+        int i = y + 1;
+        for (; i <= 8; i++) {
+            if (board[x][i] == 0) {
+                ret.emplace_back(ChessPath(x, y, x, i));
+            } else {
+                break;
+            }
+        }
+        if (i <= 7) {
+            for (int j = i + 1; j <= 8; j++) {
+                if (board[x][j] != 0) {
+                    if (board[x][j] * colorSign < 0) {
+                        ret.emplace_back(ChessPath(x, y, x, j, board[x][j]));
+                        break;
+                    } else {
+                        break;
+                    }
+                }
+            }
+        }
+    }
+}
+
+void Chessboard::get_path_of_7(int x, int y, paths_t &ret) {
+    int colorSign = board[x][y] > 0 ? 1 : -1;
+    if (colorSign > 0) {
+        // 上
+        if (x >= 1 && board[x - 1][y] * colorSign <= 0) {
+            ret.emplace_back(ChessPath(x, y, x - 1, y, board[x - 1][y]));
+        }
+    } else {
+        // 下
+        if (x <= 8 && board[x + 1][y] * colorSign <= 0) {
+            ret.emplace_back(ChessPath(x, y, x + 1, y, board[x + 1][y]));
+        }
+    }
+
+    // 过河后可以向左向右
+    if ((colorSign > 0 && x <= 4) || (colorSign < 0 && x >= 5)) {
+        // 左
+        if (y >= 1 && board[x][y - 1] * colorSign <= 0) {
+            ret.emplace_back(ChessPath(x, y, x, y - 1, board[x][y - 1]));
+        }
+        // 右
+        if (y <= 7 && board[x][y + 1] * colorSign <= 0) {
+            ret.emplace_back(ChessPath(x, y, x, y + 1, board[x][y + 1]));
+        }
+    }
+}
+
+void Chessboard::get_chess_path_of_id(int x, int y, paths_t &ret) {
+
+    // 获得棋子类型
+    int id = board[x][y];
+
+    if (id == 1 || id == -1) {
+        get_path_of_1(x, y, ret);
+    } else if (id == 2 || id == -2) {
+        get_path_of_2(x, y, ret);
+    } else if (id == 3 || id == -3) {
+        get_path_of_3(x, y, ret);
+    } else if (id == 4 || id == -4) {
+        get_path_of_4(x, y, ret);
+    } else if (id == 5 || id == -5) {
+        get_path_of_5(x, y, ret);
+    } else if (id == 6 || id == -6) {
+        get_path_of_6(x, y, ret);
+    } else if (id == 7 || id == -7) {
+        get_path_of_7(x, y, ret);
+    }
+}
