@@ -9,12 +9,12 @@ _num_paths: int = ...
 # 存放路径对应编号的字典
 # key: str   => 路径
 # value: int => 该路径的编号
-_path_num_dict = dict()
+_path_id_dict = dict()
 
 # 存放编号对应路径的字典
 # key: int   => 路径编号
 # value: str => 该编号对应的路径
-_num_path_dict = dict()
+_id_path_dict = dict()
 
 
 def _init_dicts():
@@ -37,11 +37,12 @@ def _init_dicts():
     # 遍历棋盘上的每个点作为路径的起始点
     for i in range(10):
         for j in range(9):
+
             # 纵向的所有路径
             for rows in range(10):
                 if rows == i:
                     continue
-                paths.append(convert(i, j, j, rows))
+                paths.append(convert(i, j, rows, j))
 
             # 横向所有路径
             for cols in range(9):
@@ -71,13 +72,23 @@ def _init_dicts():
                   '8493', '8495', '9384', '9584']
 
     paths = paths + paths_of_3 + paths_of_4
+    # print('asdf', 3435 in paths)
+    # print(len(paths))
     global _num_paths
     _num_paths = len(paths)
 
     # 将路径加入字典
-    for num, path in enumerate(paths):
-        _num_path_dict[num] = path
-        _path_num_dict[path] = num
+    for num, path in enumerate(paths, 0):
+        _id_path_dict[num] = path
+        _path_id_dict[path] = num
+
+    # print(f'len(dict)={len(_num_path_dict)}')
 
 
 _init_dicts()
+
+
+if __name__ == '__main__':
+    _init_dicts()
+    print(_path_id_dict['3454'])
+    print()

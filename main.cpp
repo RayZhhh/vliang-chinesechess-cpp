@@ -71,7 +71,7 @@ public:
             cChessboard.print_chessboard();
 
             // ai
-            MultiThreadEvaluator evaluator(cChessboard, 8, TreeType::MTDF);
+            MultiThreadEvaluator evaluator(cChessboard, 6, TreeType::MTDF_QUIE);
             ChessPath best = evaluator.get_best_path();
             cChessboard.move_chess(best);
             stack.push(best);

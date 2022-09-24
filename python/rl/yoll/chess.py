@@ -1,6 +1,8 @@
+from typing import List
+
 import torch
 from torch import Tensor
-from .dicts import _path_num_dict, _num_path_dict
+from .dicts import _path_id_dict, _id_path_dict
 from .dicts import _num_paths
 import copy
 
@@ -17,27 +19,28 @@ class Chess:
 
 class ChessPath:
 
-    def __init__(self, from_x=-1, from_y=-1, to_x=-1, to_y=-1, eat=None, value=0, path_num=None, path_str=None):
-        self.eat, self.value = None, None
+    def __init__(self, from_x=-1, from_y=-1, to_x=-1, to_y=-1, eat=0, value=0.0, path_id=None, path_str=None):
+        self.eat, self.value = eat, value
 
         if path_str is not None:
             self.from_path_str(path_str)
 
-        elif path_num is not None:
-            self.from_num_path_dict(path_num)
+        elif path_id is not None:
+            self.from_num_path_dict(path_id)
 
         else:
             self.from_x, self.from_y, self.to_x, self.to_y = from_x, from_y, to_x, to_y
 
     def __repr__(self):
-        return '(%d, %d) => (%d, %d)\n' % (self.from_x, self.from_y, self.to_x, self.to_y)
+        return '[%d, %d] => [%d, %d] value=%f\n' \
+               % (self.from_x, self.from_y, self.to_x, self.to_y, self.value)
 
     def __str__(self):
         return str(self.from_x) + str(self.from_y) + str(self.to_x) + str(self.to_y)
 
-    def get_path_num(self):
+    def get_path_id(self):
         """获得当前路径的编号"""
-        return _path_num_dict[str(self)]
+        return _path_id_dict[str(self)]
 
     def symmetry(self):
         """路径左右对称"""
@@ -51,12 +54,12 @@ class ChessPath:
     def one_hot(self) -> Tensor:
         """将路径转化成 one-hot 编码"""
         ret = torch.zeros(_num_paths)
-        ret[_path_num_dict[str(self)]] = 1
+        ret[_path_id_dict[str(self)]] = 1
         return ret
 
     def from_num_path_dict(self, num):
         """通过编号来初始化 ChessPath 对象"""
-        path_str = _num_path_dict[num]
+        path_str = _id_path_dict[num]
         self.from_x, self.from_y, self.to_x, self.to_y = \
             int(path_str[0]), int(path_str[1]), int(path_str[2]), int(path_str[3])
 
@@ -72,6 +75,9 @@ def _num2char(num):
 
 
 class Chessboard:
+
+    POSITIVE_SIDE = 1   # 棋盘的正数方
+    NEGATIVE_SIZE = -1  # 棋盘的负数方
 
     def __init__(self, board_seq=None):
         self.board = [[0 for j in range(9)] for i in range(10)]
@@ -431,7 +437,7 @@ class Chessboard:
         id = self.board[x][y] if self.board[x][y] > 0 else -self.board[x][y]
         return func[id - 1](x, y)
 
-    def get_all_paths(self, color_sign):
+    def get_all_paths(self, color_sign) -> List[ChessPath]:
         ret = []
         if color_sign > 0:
             for i in range(0, 10):

@@ -56,7 +56,7 @@ public:
      * 当达到 search_depth 的常规搜索深度时，如果需要静态搜索且达到静态搜索条件（正在发生吃子），那么将出发静态搜索，
      * 这个变量表示静态搜索附加的额外搜索深度。即实际最大搜索深度为：search_depth + QUIESCENCE_MAX_DEPTH。
      */
-    const static int QUIESCENCE_MAX_DEPTH = 9;
+    const static int QUIESCENCE_MAX_DEPTH = 8;
 
     /**
      * 棋盘。
