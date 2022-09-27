@@ -36,7 +36,6 @@ class PolicyNetEvaluator(EvaluatorBase):
         super().__init__(chessboard=chessboard, side=side)
         self.policy_net = policy_net
 
-
     def get_path(self, choice='prob') -> ChessPath:
         """利用网络选择路径
         choice: default 'prob', option 'sample'

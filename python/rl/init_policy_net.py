@@ -22,8 +22,21 @@ TRAIN_BATCH = 32
 TEST_BATCH = 100
 LR_INIT = 0.001
 EPOCH_IN_THIS_RUN = 80
-DEVICE = torch.device('cuda:0') if torch.cuda.is_available() else torch.device('cpu')
+DEVICE = ...
 SAVE_FILE_BASE = './weights/yoll_policy_9_epoch_'
+
+
+def select_device():
+    global DEVICE
+    if torch.cuda.is_available():  # 如果 cuda 设备可以使用
+        DEVICE = torch.device('cuda:0')
+    elif torch.backends.mps.is_available():  # 如果基于 metal 的设备可以使用
+        DEVICE = torch.device('mps')
+    else:  # 使用 cpu
+        DEVICE = torch.device('cpu')
+
+
+select_device()
 
 
 def get_weight_path(epoch_num: int) -> str:
