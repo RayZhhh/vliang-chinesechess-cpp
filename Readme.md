@@ -42,7 +42,7 @@ MacOS
 ```shell
 g++ -std=c++20 -O3 -o chess main.cpp cpp/source/*.cpp
 ./chess
-
+```
 Linux
 ```shell
 g++ -std=c++2a -O3 -o chess main.cpp cpp/source/*.cpp -lpthread 
