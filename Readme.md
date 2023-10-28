@@ -38,10 +38,14 @@ pro 为例：CPU型号为 Core i9-9880h @2.3GHz，开局阶段使用深度为8�
 ·我对前端一窍不通，因此前端是抄的，具体逻辑稍微改了下，倒是能玩。
 
 ## 编译运行（命令行运行）
-
+MacOS
 ```shell
-g++ -std=c++20 -O3 -o chess main.cpp source/*.cpp
+g++ -std=c++20 -O3 -o chess main.cpp cpp/source/*.cpp
 ./chess
+
+Linux
+```shell
+g++ -std=c++2a -O3 -o chess main.cpp cpp/source/*.cpp -lpthread 
 ```
 
 ## GUI
